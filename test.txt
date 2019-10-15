@@ -1,1 +1,6 @@
 prueba
+
+git remote add origin https://github.com/IanMorales77/chamo_completo
+
+
+g
