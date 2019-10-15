@@ -1,0 +1,19 @@
+{
+  "name": "Estudio_Tailwind",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "@tailwindcss/custom-forms": "^0.2.1",
+    "tailwindcss": "^1.1.2"
+  },
+  "dependencies": {
+    "accordion-js": "^2.7.3"
+  }
+}

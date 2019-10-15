@@ -1,0 +1,10 @@
+@font-face{
+    font-family: legales;
+    src: url(fonts/SimplyRounded.ttf);
+}
+
+
+.legales{
+    font-family: legales;
+    font-size: normal;
+}   
