@@ -1,0 +1,82 @@
+  <div class="flex ">
+             <button class=" w-1/2 rounded-b-lg bg-yellow-500 text-xs uppercase h-10 ">COMPRAR AHORA</button>
+             <button class=" w-1/2 rounded-b-lg bg-gray-800 text-xs  uppercase text-gray-100 h-10 ">AÑADIR AL CARRITO</button>
+  </div>
+
+
+
+                    <div class=" rounded-lg border border-gray-400 bg-indigo-200  w-2/3  shadow-lg ">
+                                
+                        <div class="mt-5"><img src="img/tel1.jpg" alt="tel" class="thumnail_catalog m-auto "></div>
+                                <div class="p-2">
+                                    <ul>
+                                        <li>Samgung
+                                           <div class="float-right font-bold tex-xl">$15,920</div> 
+                                        </li>
+                                        <li>
+                                            <div class="bg-red-800 text-gray-100 px-2 w-16 text-center ">3.4 
+                                                <i class="far fa-star text-gray-100"></i>
+                                            </div>
+                                        </li>
+                                        <li>
+                                          <div>  Selccione un color: <i class="fas fa-square text-indigo-800"></i>  <i class="fas fa-square text-yellow-500"></i> <i class="fas fa-square"></i> </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                              
+                            <div class="flex ">
+                                        <button class=" w-1/2 rounded-b-lg bg-yellow-500 text-xs uppercase h-10 ">COMPRAR AHORA</button>
+                                        <button class=" w-1/2 rounded-b-lg bg-gray-800 text-xs  uppercase text-gray-100 h-10 ">AÑADIR AL CARRITO</button>
+                            </div>
+                        
+                     </div>
+    
+
+<div class=" flex bg-white  flex-wrap z-10 border border-gray-400 hover:border-gray-700 shadow-lg rounded-t-lg w-1/2 mt-5 tel_detalle " id="tel_detalle" >
+            <div class=" w-full p-2 bg-red-800 rounded-t-lg ">
+                    <h3 class="text-xl text-center text-gray-100 font-bold ">Detalle de Compra 
+                        <i class="fas fa-times float-right m-2 cursor-pointer text-2xl" onclick="close_window()"></i> </h3>
+                    
+                </div>
+            
+                <div class="flex w-full ">
+                    
+                        <div class="w-1/3 mx-2 px-5">
+                            <img src="img/logo_huawei.jpg" alt="logo Huawei" >
+                          
+                            <div class="flex mb-4 bg-gray-400">
+                                <i class="fas fa-chevron-left mt-32 text-4xl cursor-pointer"  onclick="volver();"></i>
+                                <img src="img/gen-note.png" alt="telefono" id='product_tel'>
+
+                               
+                                <i class="fas fa-chevron-right mt-32 text-4xl cursor-pointer" onclick="close_window()" ></i>
+                            </div>
+
+                          
+                          
+                        </div>
+                        <div class="w-2/3 px-5 mt-5">
+                           <ul class=" text-gray-600 text-xl mb-4 mx-2">
+                              <li class="border-b-2">Y9</li>
+                              <li class="border-b-2" >Sku: 31035810</li>
+                              <li class="border-b-2">Tamaño de pantalla 6.5 pulgadas</li>
+                              <li class="border-b-2">Cámara principal 13 MP +2 Mp</li>
+                              <li class="border-b-2">Cámara frontal 16 Mpx + 2 Mpx</li>
+                              <li class="border-b-2">Os Android 8.1 </li>
+                              <li class="border-b-2">Memoria interna 64 GB</li>
+                              <li class="border-b-2">Memoria externa Expandible a 256 GB</li>
+                              <li class="border-b-2">Memoria RAM 3 GB</li>
+                              <li class="border-b-2">Batería 4000 mAh</li>
+                              <li class="border-b-2">Processador HiSilicon, Kirin 710</li>
+                              <li class="border-b-2">Sensor de huella  Si</li>
+                            </ul>
+                        <div> 
+                        <div class="mb-5 mt-2 mx-5 text-left  font-bold"> Colores disponibles
+                            <div class="hover:border-gray-700"><i class="fas fa-square text-indigo-800 text-4xl cursor-pointer"></i> </div>
+                                <i class="fas fa-square text-yellow-500 text-4xl cursor-pointer"></i> 
+                                <i class="fas fa-square text-4xl rounded-t-lg"></i> 
+                            </div>
+                        </div>
+                        </div>
+                    </div>
+</div>
