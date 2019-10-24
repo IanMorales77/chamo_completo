@@ -1,0 +1,611 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chamo Movil</title>
+    <meta name="description" content="Más que un servicio de Telefonía Móvil, es la Comunidad más grande de Venozolanos en México">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+   
+
+    <script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+
+    <link rel="icon" href="icono_chamo.png">
+
+<style>
+     .thumnail_catalog{
+         width: 175px;
+
+    }
+
+    #favorito,#favorito2, #detalle, #prodcutos_listado{
+        display: none;
+    }
+
+</style>
+   
+</strong>
+</head>
+<body>
+    <head>
+    <section>
+            <div class="  md:hidden  top-0  w-32 h-32  mx-auto"> <img src="img/logo_chamo_register_03.png" alt="Logo Registro"> </div>
+
+        <div class="container flex   justify-between mt-5 md:mx-10 ">
+        
+            <div class=" hidden lg:block md:w-48 px-2 py-2"><img src="img/Chamo Movil-08.png" alt="LogoChamo"></div>
+        
+            <nav>
+                <div class="flex  w-auto justify-between mx-4  bg-white  lg:px-8 lg:border rounded-lg  shadow-lg relative">
+        
+                    <div class=" md:text-sm text-gray-700 mt-2  ">
+                           
+                            <ul class="flex mx-5 py-2">
+                                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                                <li class="px-2  md:hidden"><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+                                <li class="px-2 hidden md:block"><a href="#"><i class="fas fa-angle-double-right"></i> eComerce </a></li>
+                                <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right mx-2"></i>CellPhone</li>
+                                <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right"></i> Huawei</li>
+                                <li></li>
+
+                            </ul>    
+                    
+                    <!--Menu tel -->
+                     <div class="bg-white shadow-lg fixed mt-2  md:hidden">
+                            <ul class="m-2 p-2 mx-2 ">
+                           <li> <i class="far fa-folder mr-2"><a href="#"></i>eComerce </a></li>
+                           <li> <i class="far fa-folder mr-2 "><a href="#"></i>CellPhone </a></li>
+                           <li> <i class="far fa-folder mr-2 "></i><a href="#"></i></i>Huawei </a></li>
+                        </ul>
+                    </div>
+        
+                    </div>
+        
+                    <ul class="flex  text-base md:text-xl text-gray-500 font-bold md:mx-10 py-2">
+                        <li><i class="far fa-user  mr-2 md:mr-5"></i>Richard Falsone</li>
+                        <li> <i class="fas fa-cart-plus md:mr-5" id="cart"></i> 
+                        <input type="text"  class=" w-5  bg-transparent text-center font-bold  text-gray-800" id="cant_tel"></li>
+                    </ul>
+                            
+                           
+                        
+                  
+        
+                </div>
+            </nav>
+        
+        </div>
+    
+ 
+    </section>
+</head>
+
+<section id="catalogo">
+        
+        <div class="flex flex-wrap mx-5 md:mx-10">
+             
+                <div class="  w-full md:w-1/4 ">
+                    <div class=" md:hidden flex mb-4 justify-center">
+                            <div class="w-full">
+                                <button class="border border-gray-400  mt-5  px-2 py-2 w-full  text-center font-bold   text-blue-500 text-base hover:bg-gray-400">
+                                <a href="#" onclick="document.getElementById('filtro_rango').style.display = 'block';">Filtrar  <i class="fas fa-filter"></i> </a>
+                            </button> 
+                        </div>
+                            
+                            
+                         
+                    </div>
+                    <!-- filtro por rango-->
+                    <div class=" hidden md:block mx-2 bg-white rounded-lg border border-gray-400  shadow-lg px-5 py-2" id='filtro_rango'>
+
+                            <div class="md:hidden"> <i class="fas fa-times float-right m-2 cursor-pointer text-2xl text-gray-500"  onclick="document.getElementById('filtro_rango').style.display = 'none';"></i> </div>
+                            <div class="border-b-2 border-gray-400 mb-4 py-5 ">
+                                    <p class="font-bold ">Multi Range</p>
+                                        <ul>
+                                        <li>
+                                        <input type="radio" name="mensual" value="winter"> <span class="text-sm md:text-base">$10</span> 
+                                       
+                                      </li>
+                                        <li><input type="radio" name="mensual" value="3meses">  <span class="text-sm md:text-base"> $10-$100 </span> 
+                                           
+                                        </li>
+                                        <li><input type="radio" name="mensual" value="6meses">  <span class="text-sm md:text-base">$100 -$500 </span>
+                                            
+                                        </li>
+                                        <li><input type="radio" name="mensual" value="6meses">  <span class="text-sm md:text-base">Todos </span> 
+                                           
+                                        </li>
+                                </ul>
+                            </div>
+
+
+                            <div class="border-b-2 border-gray-400 mb-4 mt-5 py-5 ">
+                            
+                                    <p class="font-bold ">Categoría</p>
+                                <ul>
+                                        <li>
+                                        <input type="checkbox" name="mensual" value="winter">
+                                        <span class="text-sm md:text-base">Telefonos Celulares</span>  
+                                        
+                                      </li>
+                                        <li>
+                                            <input type="checkbox" name="mensual" value="3meses"> 
+                                            <span class="text-sm md:text-base"> Tablets </span>
+                                             
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="mensual" value="6meses"> 
+                                            <span class="text-sm md:text-base">Accesorios  </span> 
+                                            
+                                        </li>
+                                        <li>
+                                            <input type="checkbox" name="mensual" value="6meses"> 
+                                            <span class="text-sm md:text-base">Modems </span>
+                                              
+                                        </li>
+                                        <li>
+                                        <input type="checkbox" name="mensual" value="6meses">
+                                        <span class="text-sm md:text-base">Mifi </span>
+                                        
+                                        </li>
+                                </ul>
+                                </div>
+
+                                <div class="border-b-2 border-gray-400 mb-4  mt-5 py-5">
+                            
+                                        <p class="font-bold ">Marca</p>
+                                            <ul>
+                                                <li>
+                                                <input type="checkbox" name="mensual" value="winter">
+                                                <span class="text-sm md:text-base">Huawei</span>
+                                                 
+                                              </li>
+                                                <li>
+                                                    <input type="checkbox" name="mensual" value="3meses"> 
+                                                    <span class="text-sm md:text-base"> Apple </span>
+                                                      
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="mensual" value="6meses"> 
+                                                    <span class="text-sm md:text-base">Samsung </span>
+                                                    
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="mensual" value="6meses">  
+                                                    <span class="text-sm md:text-base">Motorola </span>  
+                                                    
+                                                </li>
+                                                <li>
+                                                    <input type="checkbox" name="mensual" value="6meses"> 
+                                                    <span class="text-sm md:text-base">Hp </span> 
+                                                    
+                                                </li>
+                                                <li>
+                                                 <input type="checkbox" name="mensual" value="6meses"> 
+                                                 <span class="text-sm md:text-base">LG </span>  
+                                                 
+                                                </li>
+                
+                                                <li>
+                                                        <input type="checkbox" name="mensual" value="6meses">
+                                                        <span class="text-sm md:text-base">Canon </span>
+                                                         
+                                                       </li>
+                                            </ul>
+                                        </div>
+
+
+
+
+
+                        <div class="border-b-2 border-gray-400 mb-4  mt-5 py-5">
+
+                                <p class="font-bold ">Ranking</p>
+                                <ul>
+                                    <li>
+                                        <i class="far fa-star text-yellow-600"></i>
+                                        <i class="far fa-star text-yellow-600"></i>
+                                        <i class="far fa-star text-yellow-600"></i>
+                                        <i class="far fa-star text-yellow-600"></i>
+                                        <i class="far fa-star text-yellow-600"></i>
+                                        
+                                        &up
+                                        
+                                    
+                                    
+                                    
+                                    
+                                    </li>
+                                    <li>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            
+                                            &up
+                                            
+                                    </li>
+                                    <li>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            
+                                            
+                                            &up
+                                            
+                                    </li>
+
+                                    <li>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            
+                                            &up
+                                            
+                                    </li>
+
+                                    <li>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            
+                                            &up
+                                            
+                                    </li>
+        
+        
+                                </ul>
+                                <button class=" w-full px-2 py-2  rounded-lg border border-gray-600 mt-5  uppercase text-gray-700 hover:bg-gray-400">Limpiar Filtros</button>
+        
+                            </div>
+        
+
+
+
+
+
+                    </div>
+
+
+                    
+
+
+
+
+
+                </div>
+                
+                <!--columna dos-->
+                <div class=" w-full md:w-3/4">
+                
+                <!--Buscador-->
+            <div class=" w-full">
+                <div class=" flex justify-end ">
+                   <div class="  w-full md:w-1/3  text-xl  mx-5 mb-4 text-right text-gray-600"> <P>494 resultados</P> </div>
+                   <div class="  w-8  text-gray-700"><a href="#" onclick="list_cuadros()"><i class="fas fa-th-large"></i></a> </div>
+                   <div class="  w-8 text-gray-700"><a href="#" onclick="list_lineas()"><i class="fas fa-bars"></i></a></div>
+                    
+                </div>
+           
+                <div class=" flex justify-center bg-white rounded-lg border border-gray-400  shadow-lg ">
+                        <input class="shadow appearance-none border rounded w-4/5 mx-2 py-2 
+                        text-gray-700 leading-tight focus:outline-none focus:shadow-outline m-2 px-2" id="username" type="text" >
+                    <i class="fas fa-search  mt-2 py-2 text-2xl text-gray-500"></i>
+                </div>
+        </div>
+    <!--termina buscador-->
+    
+
+ 
+    <!--filtros movil-->
+
+
+    <!--termina filtrps movil-->
+
+        <!-- catalogo de telefonos-->
+
+
+<section id="productos_cuadros">
+
+ <div class="flex flex-wrap justify-center ">
+
+
+
+                <div class= "w-full mt-5  mb-5 md:w-1/4  mx-5 rounded-lg border border-gray-400   bg-white relative  shadow-lg  cursor-pointer hover:border-gray-700">
+                    <div class="text-right">   <i class=" far fa-heart  text-red-800 m-2 mx-5 cursor-pointer text-2xl" id="favorito2"></i>  </div>
+                                
+                    <div class=""><img src="img/tel1.jpg" alt="tel" class="thumnail_catalog m-auto "></div>
+                            <div class="p-2 mb-4">
+                                <ul>
+                                    <li>Samgung
+                                       <div class="float-right font-bold text-2xl m-2">$15,920</div> 
+                                    </li>
+                                    <li>
+                                        <div class="bg-red-800 text-gray-100 px-2 w-16 text-center ">3.4 
+                                            <i class="far fa-star text-gray-100"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                      <div class="mb-5 mt-2 text-center">  Selccione un color: <i class="fas fa-square text-indigo-800"></i>  <i class="fas fa-square text-yellow-500"></i> <i class="fas fa-square"></i> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                          
+                        <div class=" flex  w-full absolute bottom-0 ">
+                                    <button class=" w-1/2  rounded-bl-lg bg-yellow-500 hover:bg-green-500  hover:text-gray-100 text-xs uppercase h-10" onclick='mostrar_producto()' >COMPRAR AHORA</button>
+                                    <button class=" w-1/2  rounded-br-lg bg-gray-900  hover:bg-green-500  hover:text-gray-100 text-xs  uppercase text-gray-100 h-10 " onclick="cart_addon()">AÑADIR AL CARRITO</button>
+                        </div>
+                    
+                 </div>
+
+
+                 <div class= "w-full mt-5  mb-5 md:w-1/4  mx-5 rounded-lg border border-gray-400   bg-white relative  shadow-lg  cursor-pointer hover:border-gray-700">
+                                
+                    <div class="mt-5"><img src="img/tel1.jpg" alt="tel" class="thumnail_catalog m-auto "></div>
+                            <div class="p-2 mb-4">
+                                <ul>
+                                    <li>Samgung
+                                       <div class="float-right font-bold text-2xl m-2">$15,920</div> 
+                                    </li>
+                                    <li>
+                                        <div class="bg-red-800 text-gray-100 px-2 w-16 text-center ">3.4 
+                                            <i class="far fa-star text-gray-100"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                      <div class="mb-5 mt-2 text-center">  Selccione un color: <i class="fas fa-square text-indigo-800"></i>  <i class="fas fa-square text-yellow-500"></i> <i class="fas fa-square"></i> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                          
+                        <div class=" flex  w-full absolute bottom-0 ">
+                                    <button class=" w-1/2  rounded-bl-lg bg-yellow-500 hover:bg-green-500  hover:text-gray-100 text-xs uppercase h-10" onclick='mostrar_producto()' >COMPRAR AHORA</button>
+                                    <button class=" w-1/2  rounded-br-lg bg-gray-900  hover:bg-green-500  hover:text-gray-100 text-xs  uppercase text-gray-100 h-10 " onclick="cart_addon()">AÑADIR AL CARRITO</button>
+                        </div>
+                    
+                 </div>
+
+
+
+
+                 <div class= "w-full mt-5  mb-5 md:w-1/4 mx-5 rounded-lg border border-gray-400   bg-white relative  shadow-lg  cursor-pointer hover:border-gray-700">
+                                
+                    <div class="mt-5"><img src="img/tel1.jpg" alt="tel" class="thumnail_catalog m-auto "></div>
+                            <div class="p-2 mb-4">
+                                <ul>
+                                    <li>Samgung
+                                       <div class="float-right font-bold text-2xl m-2">$15,920</div> 
+                                    </li>
+                                    <li>
+                                        <div class="bg-red-800 text-gray-100 px-2 w-16 text-center ">3.4 
+                                            <i class="far fa-star text-gray-100"></i>
+                                        </div>
+                                    </li>
+                                    <li>
+                                      <div class="mb-5 mt-2 text-center">  Selccione un color: <i class="fas fa-square text-indigo-800"></i>  <i class="fas fa-square text-yellow-500"></i> <i class="fas fa-square"></i> </div>
+                                    </li>
+                                </ul>
+                            </div>
+                          
+                        <div class=" flex  w-full absolute bottom-0 ">
+                                    <button class=" w-1/2  rounded-bl-lg bg-yellow-500 hover:bg-green-500  hover:text-gray-100 text-xs uppercase h-10" onclick='mostrar_producto()' >COMPRAR AHORA</button>
+                                    <button class=" w-1/2  rounded-br-lg bg-gray-900  hover:bg-green-500  hover:text-gray-100 text-xs  uppercase text-gray-100 h-10 " onclick="cart_addon()">AÑADIR AL CARRITO</button>
+                        </div>
+                    
+                 </div>
+
+                 </div>
+
+
+
+</section>
+
+
+
+<section id="prodcutos_listado">
+        <div class="flex flex-wrap ">
+                       
+                    <!-- Producto-->
+                    <div class="flex w-full mb-4  border-dotted border-b-2 border-gray-400 mb-5 py-5">
+                           
+                        <div class="w-2/5  md:w-1/5 bg-white">
+                            <img src="img/tel1.jpg" alt="tel" class="thumnail_catalog m-auto ">
+                        </div>
+                        
+                        <div class=" w- 3/5 md:w-4/5">
+                            <i class="far fa-heart float-right text-red-800 m-2 mx-5 cursor-pointer text-2xl" id="favorito"></i> 
+                            <p class="text-2xl font-bold px-2">Samsung</p>
+                            <div class="bg-red-800 text-gray-100 px-2 w-16 m-2 text-center ">3.4 
+                                <i class="far fa-star text-gray-100"></i>
+                            </div>
+                        <div class="font-bold text-2xl m-2">$15,920</div> 
+                        <div class="mb-5 mt-2">  Selccione un color: 
+                            <i class="fas fa-square text-indigo-800"></i>  <i class="fas fa-square text-yellow-500"></i> 
+                            <i class="fas fa-square"></i> 
+                        </div>
+                        <div class=" flex justify-center">
+                            <button class="  w-1/2 md:w-1/3  bg-yellow-500 hover:bg-green-500  hover:text-gray-100 text-xs uppercase h-10" onclick='mostrar_producto()' >Ver Detalle</button>
+                            <button class="  w-1/2 md:w-1/3  ml-5  bg-gray-900  hover:bg-green-500  hover:text-gray-100 text-xs  uppercase text-gray-100 h-10 " onclick="cart_addon()">AÑADIR AL CARRITO</button>
+                        </div>
+                    </div>
+                <!--Fin del producto-->
+            </div>
+
+
+
+            <div class="flex w-full mb-4  border-dotted border-b-2 border-gray-400 mb-5 py-5">
+                           
+                    <div class="w-2/5  md:w-1/5 bg-white">
+                        <img src="img/tel1.jpg" alt="tel" class="thumnail_catalog m-auto ">
+                    </div>
+                    
+                    <div class=" w- 3/5 md:w-4/5">
+                        <i class="far fa-heart float-right text-red-800 m-2 mx-5 cursor-pointer text-2xl" id="favorito"></i> 
+                        <p class="text-2xl font-bold px-2">Samsung</p>
+                        <div class="bg-red-800 text-gray-100 px-2 w-16 m-2 text-center ">3.4 
+                            <i class="far fa-star text-gray-100"></i>
+                        </div>
+                    <div class="font-bold text-2xl m-2">$15,920</div> 
+                    <div class="mb-5 mt-2">  Selccione un color: 
+                        <i class="fas fa-square text-indigo-800"></i>  <i class="fas fa-square text-yellow-500"></i> 
+                        <i class="fas fa-square"></i> 
+                    </div>
+                    <div class=" flex justify-center">
+                        <button class="  w-1/2 md:w-1/3  bg-yellow-500 hover:bg-green-500  hover:text-gray-100 text-xs uppercase h-10" onclick='mostrar_producto()' >Ver Detalle</button>
+                        <button class="  w-1/2 md:w-1/3  ml-5  bg-gray-900  hover:bg-green-500  hover:text-gray-100 text-xs  uppercase text-gray-100 h-10 " onclick="cart_addon()">AÑADIR AL CARRITO</button>
+                    </div>
+                </div>
+            <!--Fin del producto-->
+        </div>
+
+
+
+
+
+
+
+    </div>
+
+</section>
+
+    <!-- Detalle-->
+         
+    <section id='detalle'>
+    <div class="flex flex-wrap">
+            <div class="w-full md:w-1/3  ">
+                <img src="img/logo_huawei.jpg" alt="logo Huawei" class="w-full" >
+                <div class="flex mb-4">
+                        <div class="w-1/6  px-2"> <i class="fas fa-chevron-left mt-40 text-4xl cursor-pointer"  onclick="volver();"></i> </div>
+                        <div class="w-4/6 "><img src="img/gen-note.png" alt="telefono" id='product_tel'></div>
+                        <div class="w-1/6 px-2 text-right"> <i class="fas fa-chevron-right mt-40 text-4xl cursor-pointer" onclick="cambiar()" ></i></div>
+                      </div>
+
+
+            </div>
+            
+            <div class="w-full  md:w-2/3  mb-4">
+              <div class="mt-5 px-2">
+                <ul class=" text-gray-600 text-xl mb-4 mx-2">
+                    <li class="border-b-2">Y9</li>
+                    <li class="border-b-2" >Sku: 31035810</li>
+                    <li class="border-b-2">Tamaño de pantalla 6.5 pulgadas</li>
+                    <li class="border-b-2">Cámara principal 13 MP +2 Mp</li>
+                    <li class="border-b-2">Cámara frontal 16 Mpx + 2 Mpx</li>
+                    <li class="border-b-2">Os Android 8.1 </li>
+                    <li class="border-b-2">Memoria interna 64 GB</li>
+                    <li class="border-b-2">Memoria externa Expandible a 256 GB</li>
+                    <li class="border-b-2">Memoria RAM 3 GB</li>
+                    <li class="border-b-2">Batería 4000 mAh</li>
+                    <li class="border-b-2">Processador HiSilicon, Kirin 710</li>
+                    <li class="border-b-2">Sensor de huella  Si</li>
+                  </ul>
+              </div>
+                <div>
+                    <div class="mb-5 mt-2 mx-5  text-xl text-left  font-bold"> Colores disponibles
+                        <i class="fas fa-square text-indigo-800 text-4xl cursor-pointer"></i> 
+                             <i class="fas fa-square text-blue-500 text-4xl cursor-pointer"></i> 
+                             <i class="fas fa-square text-4xl rounded-t-lg"></i> 
+                         </div>
+
+                         <div class="text-gray-700 text-base px-2">
+                            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Tempora veritatis accusamus soluta! Repellat accusantium quis earum commodi recusandae similique, error voluptas, eaque aperiam aliquid non tenetur ducimus est eveniet. Cumque!</p>
+                         </div>
+                </div>      
+            
+            </div>    
+            
+    </div> 
+
+</section>
+        
+
+        
+
+
+           
+
+
+
+
+  
+                
+    
+
+                <!--termina columna dos-->
+        </div>  
+      
+
+                    
+
+                
+               
+
+
+
+
+</section>
+
+</body>
+
+
+
+<script>
+
+
+var tel_box= document.getElementById("tel_detalle");
+
+function close_window(){
+    tel_box.style.display = 'none';  
+}
+
+
+function cambiar() {
+  document.getElementById('product_tel').src = "img/gen-note_2.png"; 
+}
+
+ function volver() {
+  document.getElementById('product_tel').src = "img/gen-note_3.png";
+ }
+
+
+ function cart_addon(){
+    var valor = document.getElementById('cant_tel').value;
+    
+    document.getElementById('favorito').style.display = 'block';
+    document.getElementById('favorito2').style.display = 'block';
+
+     document.getElementById('cart').style.color = '#27e359';
+    document.getElementById('cant_tel').value = "1"
+       
+}
+
+
+function mostrar_producto(){
+    document.getElementById('detalle').style.display = 'block';
+    document.getElementById('productos_cuadros').style.display = 'none';
+    document.getElementById('prodcutos_listado').style.display = 'none';
+}
+
+function list_cuadros(){
+    document.getElementById('prodcutos_listado').style.display = 'none';
+    document.getElementById('productos_cuadros').style.display = 'block';
+    document.getElementById('detalle').style.display = 'none';  
+}
+
+function list_lineas(){
+    document.getElementById('productos_cuadros').style.display = 'none';
+    document.getElementById('prodcutos_listado').style.display = 'block';
+    document.getElementById('detalle').style.display = 'none';  
+}
+</script>
+
+
