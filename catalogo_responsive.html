@@ -28,63 +28,65 @@
    
 </strong>
 </head>
-<body>
-    <head>
-    <section>
-            <div class="  md:hidden  top-0  w-32 h-32  mx-auto"> <img src="img/logo_chamo_register_03.png" alt="Logo Registro"> </div>
+<body>          
 
-        <div class="container flex   justify-between mt-5 md:mx-10 ">
-        
-            <div class=" hidden lg:block md:w-48 px-2 py-2"><img src="img/Chamo Movil-08.png" alt="LogoChamo"></div>
-        
-            <nav>
-                <div class="flex  w-auto justify-between mx-4  bg-white  lg:px-8 lg:border rounded-lg  shadow-lg relative">
-        
-                    <div class=" md:text-sm text-gray-700 mt-2  ">
-                           
-                            <ul class="flex mx-5 py-2">
-                                <li><a href="#"><i class="fas fa-home"></i></a></li>
-                                <li class="px-2  md:hidden"><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
-                                <li class="px-2 hidden md:block"><a href="#"><i class="fas fa-angle-double-right"></i> eComerce </a></li>
-                                <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right mx-2"></i>CellPhone</li>
-                                <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right"></i> Huawei</li>
-                                <li></li>
+        <div class="  md:hidden  top-0  w-24 h-24  mx-auto"> <img src="img/logo_chamo_register_03.png" alt="Logo Registro"> </div>
 
-                            </ul>    
-                    
-                    <!--Menu tel -->
-                     <div class="bg-white shadow-lg fixed mt-2  md:hidden">
-                            <ul class="m-2 p-2 mx-2 ">
-                           <li> <i class="far fa-folder mr-2"><a href="#"></i>eComerce </a></li>
-                           <li> <i class="far fa-folder mr-2 "><a href="#"></i>CellPhone </a></li>
-                           <li> <i class="far fa-folder mr-2 "></i><a href="#"></i></i>Huawei </a></li>
-                        </ul>
-                    </div>
-        
-                    </div>
-        
-                    <ul class="flex  text-base md:text-xl text-gray-500 font-bold md:mx-10 py-2">
-                        <li><i class="far fa-user  mr-2 md:mr-5"></i>Richard Falsone</li>
-                        <li> <i class="fas fa-cart-plus md:mr-5" id="cart"></i> 
-                        <input type="text"  class=" w-5  bg-transparent text-center font-bold  text-gray-800" id="cant_tel"></li>
-                    </ul>
-                            
-                           
-                        
-                  
-        
-                </div>
-            </nav>
-        
-        </div>
+        <div class="flex justify-between  mx-10">
+
+            <div class="  hidden lg:block w-48 px-2 py-2 "><img src="img/Chamo Movil-08.png" alt="LogoChamo"></div>
+            <div class="  w-full md:w-2/3 ">
+            
+                <nav class="w-auto mt-5">
+                        <div class="flex bg-white justify-between  lg:border rounded-lg  shadow-lg py-2">
+                
+                            <div class="h-10">  <ul class="flex mx-5 py-2 ">
+                                    <li><a href="#"><i class="fas fa-home"></i></a></li>
+                                    <li class="px-2  md:hidden"><a href="#" onclick="document.getElementById('menu_tel').style.display='block';"><i class="fas fa-ellipsis-h"></i></a></li>
+                                    <li class="px-2 hidden md:block"><a href="#"><i class="fas fa-angle-double-right"></i> eComerce </a></li>
+                                    <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right mx-2"></i>CellPhone</li>
+                                    <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right"></i> Huawei</li>
+                                    <li></li>
     
+                                </ul>    
+                            </div>
+                            
+                             <!--Menu tel -->
+                            <div class="bg-white shadow-lg absolute mt-10 z-10  hidden" id="menu_tel">
+                                    <ul class="m-2 p-2 mx-2 ">
+                                   <li> <i class="far fa-folder mr-2"><a href="#"></i>eComerce </a></li>
+                                   <li> <i class="far fa-folder mr-2 "><a href="#"></i>CellPhone </a></li>
+                                   <li> <i class="far fa-folder mr-2 "></i><a href="#"></i></i>Huawei </a></li>
+                                   <li onmouseover="document.getElementById('menu_tel').style.display='none';">&nbsp;</li>
+                                </ul>
+                            </div>
+                                   
+                            <div class="h-10">                
+                                <ul class=" flex  text-base md:text-xl text-gray-500 font-bold md:mx-10 py-2">
+                                    <li><i class="far fa-user  mr-5 "></i>Richard Falsone</li>
+                                    <li> <i class="fas fa-cart-plus ml-5" id="cart"></i> 
+                                    <input type="text"  class=" w-5  mx-2 bg-transparent text-center font-bold  text-gray-800" id="cant_tel"></li>
+                                    </ul>
+                            </div>
+                                       
+                
+                    
+                 
+                                   
+                                
+                          
+                
+                        </div>
+                    </nav>
+            
+            
+            
+            </div>
+    </div>
  
-    </section>
-</head>
-
+   
 <section id="catalogo">
-        
-        <div class="flex flex-wrap mx-5 md:mx-10">
+     <div class="flex flex-wrap mx-5 md:mx-10">
              
                 <div class="  w-full md:w-1/4 ">
                     <div class=" md:hidden flex mb-4 justify-center">
@@ -286,6 +288,18 @@
                 
                 <!--columna dos-->
                 <div class=" w-full md:w-3/4">
+
+
+
+                            
+
+
+
+
+
+
+
+
                 
                 <!--Buscador-->
             <div class=" w-full">

@@ -1,0 +1,352 @@
+<div class=" w-full md:w-1/3 text-gray-700  m-2">
+                                    
+                                <!--Producto-->
+                                    <div class=" rounded-lg border border-gray-400   relative  shadow-lg  cursor-pointer hover:border-gray-700">
+                                
+                                        <div class="mt-5"><img src="img/tel1.jpg" alt="tel" class="thumnail_catalog m-auto "></div>
+                                                <div class="p-2 mb-4">
+                                                    <ul>
+                                                        <li>Samgung
+                                                           <div class="float-right font-bold text-2xl m-2">$15,920</div> 
+                                                        </li>
+                                                        <li>
+                                                            <div class="bg-red-800 text-gray-100 px-2 w-16 text-center ">3.4 
+                                                                <i class="far fa-star text-gray-100"></i>
+                                                            </div>
+                                                        </li>
+                                                        <li>
+                                                          <div class="mb-5 mt-2 text-center">  Selccione un color: <i class="fas fa-square text-indigo-800"></i>  <i class="fas fa-square text-yellow-500"></i> <i class="fas fa-square"></i> </div>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                              
+                                            <div class=" flex  w-full absolute bottom-0 ">
+                                                        <button class=" w-1/2 rounded-bl-lg bg-yellow-500 hover:bg-green-500  hover:text-gray-100 text-xs uppercase h-10" onclick='mostrar_producto()' >COMPRAR AHORA</button>
+                                                        <button class=" w-1/2 rounded-br-lg bg-gray-900  hover:bg-green-500  hover:text-gray-100 text-xs  uppercase text-gray-100 h-10 " onclick="cart_addon()">AÑADIR AL CARRITO</button>
+                                            </div>
+                                        
+                                     </div>
+                     
+                                <!--Producto-->      
+            
+                            </div>
+
+
+
+                            -------------------
+
+
+        <div class="flex mb-4 mx-10 ">
+
+                <div class=" hidden md:block  w-1/3 bg-indigo-200 ">
+                    <div class="mx-10 rounded-lg border border-gray-400  shadow-lg px-5 py-2">
+                        <div class="border-b-2 border-gray-400 mb-4 py-5 ">
+                            <p class="font-bold ">Multi Range</p>
+                                <ul>
+                                <li>
+                                <input type="radio" name="mensual" value="winter"> <span class="text-sm md:text-base">$10</span> 
+                               
+                              </li>
+                                <li><input type="radio" name="mensual" value="3meses">  <span class="text-sm md:text-base"> $10-$100 </span> 
+                                   
+                                </li>
+                                <li><input type="radio" name="mensual" value="6meses">  <span class="text-sm md:text-base">$100 -$500 </span>
+                                    
+                                </li>
+                                <li><input type="radio" name="mensual" value="6meses">  <span class="text-sm md:text-base">Todos </span> 
+                                   
+                                </li>
+                        </ul>
+                        </div>
+                        
+                        <div class="border-b-2 border-gray-400 mb-4 mt-5 py-5 ">
+                            
+                            <p class="font-bold ">Categoría</p>
+                        <ul>
+                                <li>
+                                <input type="checkbox" name="mensual" value="winter">
+                                <span class="text-sm md:text-base">Telefonos Celulares</span>  
+                                <span class="text-base text-red-800 float-right">1920</span>
+                              </li>
+                                <li>
+                                    <input type="checkbox" name="mensual" value="3meses"> 
+                                    <span class="text-sm md:text-base"> Tablets </span>
+                                    <span class="text-base text-red-800 float-right">1920</span>  
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="mensual" value="6meses"> 
+                                    <span class="text-sm md:text-base">Accesorios  </span> 
+                                    <span class="text-base text-red-800 float-right">1920</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="mensual" value="6meses"> 
+                                    <span class="text-sm md:text-base">Modems </span>
+                                    <span class="text-base text-red-800 float-right">1920</span>  
+                                </li>
+                                <li>
+                                <input type="checkbox" name="mensual" value="6meses">
+                                <span class="text-sm md:text-base">Mifi </span>
+                                <span class="text-base text-red-800 float-right">1920</span>
+                                </li>
+                        </ul>
+                        </div>
+                        
+                   
+                   
+                    <div class="border-b-2 border-gray-400 mb-4  mt-5 py-5">
+                            
+                        <p class="font-bold ">Marca</p>
+                            <ul>
+                                <li>
+                                <input type="checkbox" name="mensual" value="winter">
+                                <span class="text-sm md:text-base">Huawei</span>
+                                <span class="text-base text-red-800 float-right">1920</span> 
+                              </li>
+                                <li>
+                                    <input type="checkbox" name="mensual" value="3meses"> 
+                                    <span class="text-sm md:text-base"> Apple </span>
+                                    <span class="text-base text-red-800 float-right">1920</span>  
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="mensual" value="6meses"> 
+                                    <span class="text-sm md:text-base">Samsung </span>
+                                    <span class="text-base text-red-800 float-right">1920</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="mensual" value="6meses">  
+                                    <span class="text-sm md:text-base">Motorola </span>  
+                                    <span class="text-base text-red-800 float-right">1920</span>
+                                </li>
+                                <li>
+                                    <input type="checkbox" name="mensual" value="6meses"> 
+                                    <span class="text-sm md:text-base">Hp </span> 
+                                    <span class="text-base text-red-800 float-right">1920</span> 
+                                </li>
+                                <li>
+                                 <input type="checkbox" name="mensual" value="6meses"> 
+                                 <span class="text-sm md:text-base">LG </span>  
+                                 <span class="text-base text-red-800 float-right">1920</span>
+                                </li>
+
+                                <li>
+                                        <input type="checkbox" name="mensual" value="6meses">
+                                        <span class="text-sm md:text-base">Canon </span>
+                                        <span class="text-base text-red-800 float-right">1920</span>  
+                                       </li>
+                            </ul>
+                        </div>
+                    
+                        <div class="border-b-2 border-gray-400 mb-4  mt-5 py-5">
+
+                                <p class="font-bold ">Ranking</p>
+                                <ul>
+                                    <li>
+                                        <i class="far fa-star text-yellow-600"></i>
+                                        <i class="far fa-star text-yellow-600"></i>
+                                        <i class="far fa-star text-yellow-600"></i>
+                                        <i class="far fa-star text-yellow-600"></i>
+                                        <i class="far fa-star text-yellow-600"></i>
+                                        
+                                        &up
+                                        <span class="text-base text-red-800 float-right">8500</span>  
+                                    
+                                    
+                                    
+                                    
+                                    </li>
+                                    <li>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            
+                                            &up
+                                            <span class="text-base text-red-800 float-right">8500</span>  
+                                    </li>
+                                    <li>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            
+                                            
+                                            &up
+                                            <span class="text-base text-red-800 float-right">8500</span>  
+                                    </li>
+
+                                    <li>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            
+                                            &up
+                                            <span class="text-base text-red-800 float-right">8500</span>  
+                                    </li>
+
+                                    <li>
+                                            <i class="far fa-star text-yellow-600"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            <i class="far fa-star text-gray-500"></i>
+                                            
+                                            &up
+                                            <span class="text-base text-red-800 float-right">8500</span>  
+                                    </li>
+        
+        
+                                </ul>
+                                <button class=" w-full px-2 py-2  rounded-lg border border-gray-600 mt-5  uppercase text-gray-700 hover:bg-gray-400">Limpiar Filtros</button>
+        
+                            </div>
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    
+                    </div>
+
+
+
+                             
+        <!--Buscador-->
+            <div class=" w-full  md:w-2/3 mx-10 ">
+                    <div class=" flex justify-end ">
+                       <div class="w-1/3  text-xl  mx-10 mb-4 text-right text-gray-600"> <P>494 resultados</P> </div>
+                       <div class="  w-8  text-gray-700"><i class="fas fa-th-large"></i> </div>
+                       <div class="  w-8 text-gray-700"><i class="fas fa-bars"></i></div>
+                        
+                    </div>
+               
+                    <div class=" flex justify-center bg-white rounded-lg border border-gray-400  shadow-lg ">
+                            <input class="shadow appearance-none border rounded w-4/5 mx-2 py-2 
+                            text-gray-700 leading-tight focus:outline-none focus:shadow-outline m-2 px-2" id="username" type="text" >
+                        <i class="fas fa-search  mt-2 py-2 text-2xl text-gray-500"></i>
+                    </div>
+            </div>
+        <!--termina buscador-->
+
+
+modal
+
+
+
+<!--Modal-->
+<div class=" flex bg-white  flex-wrap z-10 border border-gray-400  shadow-lg rounded-t-lg w-2/3 mt-5 tel_detalle " id="tel_detalle" >
+                <div class=" w-full p-2 bg-red-800 rounded-t-lg ">
+                    <h3 class="text-xl text-center text-gray-100 font-bold ">Detalle de Compra 
+                        <i class="fas fa-times float-right m-2 cursor-pointer text-2xl" onclick="close_window()"></i> </h3>
+                </div>
+    
+         <div class="flex flex-wrap bg-red-800 ">
+            
+                <div class=" w-full md:w-1/3 mx-2 z-10">
+                    <div><img src="img/logo_huawei.jpg" alt="logo Huawei" ></div>
+                    <div class=" flex justify-start">
+                        <i class="fas fa-chevron-left mt-40 text-4xl cursor-pointer"  onclick="volver();"></i>
+                        <img src="img/gen-note.png" alt="telefono" id='product_tel'>
+                        <i class="fas fa-chevron-right mt-40 text-4xl cursor-pointer" onclick="cambiar()" ></i>
+                    </div>
+                 
+                    
+                </div>
+            <div class="w-2/3 mx-5 mb-5 mt-5  ">
+                <ul class=" text-gray-600 text-xl mb-4 mx-2">
+                    <li class="border-b-2">Y9</li>
+                    <li class="border-b-2" >Sku: 31035810</li>
+                    <li class="border-b-2">Tamaño de pantalla 6.5 pulgadas</li>
+                    <li class="border-b-2">Cámara principal 13 MP +2 Mp</li>
+                    <li class="border-b-2">Cámara frontal 16 Mpx + 2 Mpx</li>
+                    <li class="border-b-2">Os Android 8.1 </li>
+                    <li class="border-b-2">Memoria interna 64 GB</li>
+                    <li class="border-b-2">Memoria externa Expandible a 256 GB</li>
+                    <li class="border-b-2">Memoria RAM 3 GB</li>
+                    <li class="border-b-2">Batería 4000 mAh</li>
+                    <li class="border-b-2">Processador HiSilicon, Kirin 710</li>
+                    <li class="border-b-2">Sensor de huella  Si</li>
+                  </ul>
+                
+                  <div class="mb-5 mt-2 mx-5 text-left  font-bold"> Colores disponibles
+                   <i class="fas fa-square text-indigo-800 text-4xl cursor-pointer"></i> 
+                        <i class="fas fa-square text-blue-500 text-4xl cursor-pointer"></i> 
+                        <i class="fas fa-square text-4xl rounded-t-lg"></i> 
+                    </div>
+
+                </div>
+            </div>
+    </div>
+            
+            
+            
+            
+            
+            </div>
+
+            
+</div>
+
+<!--termina modal-->
+
+<!-- header -->
+
+ <section>
+            <div class="  md:hidden  top-0  w-32 h-32  mx-auto"> <img src="img/logo_chamo_register_03.png" alt="Logo Registro"> </div>
+
+        <div class=" flex justify-between mt-5 md:mx-10 bg-green-200">
+        
+            <div class=" hidden lg:block md:w-48 px-2 py-2 bg-green-300"><img src="img/Chamo Movil-08.png" alt="LogoChamo"></div>
+        
+            <nav class="  w-auto bg-orange-300 ">
+                <div class="bg-white   lg:border rounded-lg  shadow-lg ">
+        
+                    <div class=" md:text-sm text-gray-700 mt-2  ">
+                           
+                            <ul class="flex mx-5 py-2">
+                                <li><a href="#"><i class="fas fa-home"></i></a></li>
+                                <li class="px-2  md:hidden"><a href="#"><i class="fas fa-ellipsis-h"></i></a></li>
+                                <li class="px-2 hidden md:block"><a href="#"><i class="fas fa-angle-double-right"></i> eComerce </a></li>
+                                <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right mx-2"></i>CellPhone</li>
+                                <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right"></i> Huawei</li>
+                                <li></li>
+
+                            </ul>    
+                    
+                    <!--Menu tel -->
+                     <div class="bg-white shadow-lg fixed mt-2  md:hidden">
+                            <ul class="m-2 p-2 mx-2 ">
+                           <li> <i class="far fa-folder mr-2"><a href="#"></i>eComerce </a></li>
+                           <li> <i class="far fa-folder mr-2 "><a href="#"></i>CellPhone </a></li>
+                           <li> <i class="far fa-folder mr-2 "></i><a href="#"></i></i>Huawei </a></li>
+                        </ul>
+                    </div>
+        
+                    </div>
+        
+                    <ul class="flex  text-base md:text-xl text-gray-500 font-bold md:mx-10 py-2">
+                        <li><i class="far fa-user  mr-2 md:mr-5"></i>Richard Falsone</li>
+                        <li> <i class="fas fa-cart-plus md:mr-5" id="cart"></i> 
+                        <input type="text"  class=" w-5  bg-transparent text-center font-bold  text-gray-800" id="cant_tel"></li>
+                    </ul>
+                            
+                           
+                        
+                  
+        
+                </div>
+            </nav>
+        
+        </div>
+    
+ 
+    </section>
