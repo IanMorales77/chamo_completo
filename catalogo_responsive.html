@@ -42,7 +42,7 @@
                 
                             <div class="h-10">  <ul class="flex mx-5 py-2 ">
                                     <li><a href="#"><i class="fas fa-home"></i></a></li>
-                                    <li class="px-2  md:hidden"><a href="#" onclick="document.getElementById('menu_tel').style.display='block';"><i class="fas fa-ellipsis-h"></i></a></li>
+                                    <li class="px-2  md:hidden"><a href="#" onclick="show_menu_tel()"><i class="fas fa-ellipsis-h"></i></a></li>
                                     <li class="px-2 hidden md:block"><a href="#"><i class="fas fa-angle-double-right"></i> eComerce </a></li>
                                     <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right mx-2"></i>CellPhone</li>
                                     <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right"></i> Huawei</li>
@@ -61,11 +61,12 @@
                                 </ul>
                             </div>
                                    
-                            <div class="h-10">                
+                            <div class="  w-2/3 md:w-1/2">                
                                 <ul class=" flex  text-base md:text-xl text-gray-500 font-bold md:mx-10 py-2">
-                                    <li><i class="far fa-user  mr-5 "></i>Richard Falsone</li>
-                                    <li> <i class="fas fa-cart-plus ml-5" id="cart"></i> 
-                                    <input type="text"  class=" w-5  mx-2 bg-transparent text-center font-bold  text-gray-800" id="cant_tel"></li>
+                                    <li class=" hidden md:block"><i class=" far fa-user  md:mr-2 "></i></li>
+                                    <li>Richard Falsone</li>
+                                    <li> <i class="fas fa-cart-plus md:ml-2 m-2" id="cart"></i> 
+                                    <input type="text"  class=" w-5 bg-transparent text-center font-bold  text-gray-800" id="cant_tel"></li>
                                     </ul>
                             </div>
                                        
@@ -596,8 +597,7 @@ function cambiar() {
     
     document.getElementById('favorito').style.display = 'block';
     document.getElementById('favorito2').style.display = 'block';
-
-     document.getElementById('cart').style.color = '#27e359';
+    document.getElementById('cart').style.color = '#27e359';
     document.getElementById('cant_tel').value = "1"
        
 }
@@ -619,6 +619,23 @@ function list_lineas(){
     document.getElementById('productos_cuadros').style.display = 'none';
     document.getElementById('prodcutos_listado').style.display = 'block';
     document.getElementById('detalle').style.display = 'none';  
+}
+
+var flag = '';
+
+function show_menu_tel(){
+    
+      
+        if (flag == 0 ) {
+        document.getElementById('menu_tel').style.display = 'block'; 
+        flag = 1
+        console.log(flag);
+        } else if( flag == 1) {
+        document.getElementById('menu_tel').style.display = 'none'; 
+        flag = 0;
+        console.log(flag);
+    }
+       
 }
 </script>
 

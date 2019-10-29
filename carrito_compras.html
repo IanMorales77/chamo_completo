@@ -20,9 +20,120 @@
 
     }
 
-   .add_adress{
-      font-size: 9em;
-    }
+   
+
+
+input[type='range'].n {
+  display: block;
+  margin: 1em auto;
+  padding: 0;
+  background: transparent;
+  font-size: 1em;
+  cursor: pointer;
+  width: 100%;
+  position: relative;
+}
+input[type='range'].n, input[type='range'].n::-webkit-slider-runnable-track, input[type='range'].n::-webkit-slider-thumb {
+  -webkit-appearance: none;
+}
+input[type='range'].n:after {
+  content: "";
+  width: 1em;
+  height: 1em;
+  border-radius: 50%;
+  background:darkolivegreen;
+  position: absolute;
+  right: 0;
+}
+input[type='range'].n:before {
+  content: "";
+  position: absolute;
+  z-index: 0;
+  left: 0;
+  right: 0.8em;
+  height: 1em;
+  background: radial-gradient(circle at 0.5em 50%, #2788d0 0.3125em, #2788d0 0.3125em, #2788d0 0.5em, transparent 0.5em), linear-gradient(90deg, transparent 0, #2788d0 0) repeat-x 0 50%;
+  box-sizing: border-box;
+}
+input[type='range'].n::-ms-track {
+  border: none;
+  color: transparent;
+}
+input[type='range'].n::-webkit-slider-thumb {
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: solid 0.35em transparent solid 0.25em transparent;
+  width: 1.3em;
+  height: 1.3em;
+  background: orange;
+  background-clip: content-box;
+  position: relative;
+  z-index: 10;
+  margin-top: -0.1em;
+  margin-left: 0.05em;
+}
+input[type='range'].n::-moz-range-thumb {
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: solid 0.35em transparent solid 0.25em transparent;
+  width: 1.3em;
+  height: 1.3em;
+  background: orange;
+  background-clip: content-box;
+  position: relative;
+  z-index: 10;
+  margin-top: -0.1em;
+  margin-left: 0.05em;
+}
+input[type='range'].n::-ms-thumb {
+  border: none;
+  border-radius: 50%;
+  box-sizing: border-box;
+  border: solid 0.35em transparent solid 0.25em transparent;
+  width: 1.3em;
+  height: 1.3em;
+  background: orange;
+  background-clip: content-box;
+  position: relative;
+  z-index: 10;
+  margin-top: -0.1em;
+  margin-left: 0.05em;
+}
+input[type='range'].n::-ms-tooltip {
+  display: none;
+}
+input[type='range'].n:focus {
+  outline: none;
+}
+input[type='range'].n.n2:before {
+  background-size: 100% 1em, 100% 0.25em;
+}
+input[type='range'].n.n3:before {
+  background-size: 50% 1em, 100% 0.25em;
+}
+input[type='range'].n.n4:before {
+  background-size: 33.3333333333% 1em, 100% 0.25em;
+}
+input[type='range'].n.n5:before {
+  background-size: 25% 1em, 100% 0.25em;
+}
+input[type='range'].n.n6:before {
+  background-size: 20% 1em, 100% 0.25em;
+}
+input[type='range'].n.n7:before {
+  background-size: 16.6666666667% 1em, 100% 0.25em;
+}
+input[type='range'].n.n8:before {
+  background-size: 14.2857142857% 1em, 100% 0.25em;
+}
+input[type='range'].n.n9:before {
+  background-size: 12.5% 1em, 100% 0.25em;
+}
+input[type='range'].n.n10:before {
+  background-size: 11.1111111111% 1em, 100% 0.25em;
+}
 
 </style>
    
@@ -40,35 +151,24 @@
                 <nav class="w-auto mt-5">
                         <div class="flex bg-white justify-between  lg:border rounded-lg  shadow-lg py-2">
                 
-                            <div class="h-10">  <ul class="flex mx-5 py-2 ">
-                                    <li><a href="#"><i class="fas fa-home"></i></a></li>
-                                    <li class="px-2  md:hidden"><a href="#" onclick="document.getElementById('menu_tel').style.display='block';"><i class="fas fa-ellipsis-h"></i></a></li>
-                                    <li class="px-2 hidden md:block"><a href="#"><i class="fas fa-angle-double-right"></i> eComerce </a></li>
-                                    <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right mx-2"></i>CellPhone</li>
-                                    <li class="px-2 hidden md:block"><i class="fas fa-angle-double-right"></i> Huawei</li>
-                                    <li></li>
+                            <div class="h-10 w-full px-5"> 
+                                    
+                                
+                                        <input type='range' min='1' max='5' value='4' step='1' class="n n5"/>
+                                        <!-- 
+                                        <input type='range' min='1' max='6' value='5' step='1' class="n n6"/>
+                                        <input type='range' min='1' max='7' value='6' step='1' class="n n7"/>
+                                        <input type='range' min='1' max='8' value='7' step='1' class="n n8"/>
+                                        <input type='range' min='1' max='9' value='8' step='1' class="n n9"/>
+                                        -->
+                                    </div>
+                                       
     
                                 </ul>    
                             </div>
                             
-                             <!--Menu tel -->
-                            <div class="bg-white shadow-lg absolute mt-10 z-10  hidden" id="menu_tel">
-                                    <ul class="m-2 p-2 mx-2 ">
-                                   <li> <i class="far fa-folder mr-2"><a href="#"></i>eComerce </a></li>
-                                   <li> <i class="far fa-folder mr-2 "><a href="#"></i>CellPhone </a></li>
-                                   <li> <i class="far fa-folder mr-2 "></i><a href="#"></i></i>Huawei </a></li>
-                                   <li onmouseover="document.getElementById('menu_tel').style.display='none';">&nbsp;</li>
-                                </ul>
-                            </div>
-                                   
-                            <div class="h-10">                
-                                <ul class=" flex  text-base md:text-xl text-gray-500 font-bold md:mx-10 py-2">
-                                    <li><i class="far fa-user  mr-5 "></i>Richard Falsone</li>
-                                    <li> <i class="fas fa-cart-plus ml-5" id="cart"></i> 
-                                    <input type="text"  class=" w-5  mx-2 bg-transparent text-center font-bold  text-gray-800" id="cant_tel"></li>
-                                    </ul>
-                            </div>
-                                       
+                         
+                           
                 
                     
                  
@@ -198,83 +298,72 @@
 
 
     </section>
+<!-- Añadir una nueva direccion-->
+        <section id="add_adres">
 
-<section>
+                <div class="flex flex-wrap p-10 mt-2 mb-4 rounded-lg border border-gray-400 bg-orange-300  bg-gray-200 r shadow-lg  cursor-pointer hover:border-gray-700" id="dir_facuracion">
 
-    <div class="flex flex-wrap p-10 mt-5 mb-4 rounded-lg border border-gray-400   bg-gray-200 r shadow-lg  cursor-pointer hover:border-gray-700 hidden" id="dir_facuracion">
-
-            <div class="text-gray-500">
-                <p class="text-2xl text-red-800 font-bold"> <i class="fas fa-plus  mt-5 hover:text-gray-700"></i> Agregar otra dirección</p> <br>
-                <p class="text-gray-700">Asegurate de hacer clic en "Entregar a esta dirección" cuando hayas terminado.</p>
-            </div>
-             
-        
-        
-                                    
-        <div class="w-full w-full md:w-1/2 border-t-2 mt-5 py-5" >
-                <div class="mr-2 ml-2 font-bold">
-                    <label for="direccion">Direccion de facturación (calle número de casa o interior, torre, empresa):</label>
-                   </div>   
-                   
-                   <div class="mb-4 p-2">
-                     <input type="type"  class="bg-gray-300  w-full py-2 px-3  text-gray-800" name="direccion">
-                   </div>
-                </div>
-                                   
-                <div class=" w-full md:w-1/2  ">
-                        <div class="mr-2 ml-2">
-                             <label for="Numero_ext">Número Exterior</label>
-                         </div>   
-                        <div class="mb-4 p-2">
-                            <input type="type"  class="bg-gray-300  w-full py-2 px-3  text-gray-800" name="Numero_ext">
+                        <div class="flex">
+                            <div class="text-gray-500">
+                                <p class="text-2xl text-red-800 font-bold"> <i class="fas fa-plus  mt-5 hover:text-gray-700"></i> Agregar otra dirección</p>
+                                <br>
+                                <p class="text-gray-700">Asegurate de hacer clic en "Entregar a esta dirección" cuando hayas terminado.</p>
+                            </div>
+                    
                         </div>
-                </div>
-                         <div class="w-full md:w-1/2">
-                              <div class="mr-2 ml-2">
-                                    <label for="num_interior">Número interior</label>
-                        </div>   
-                 <div class="mb-4 p-2">
-                     <input type="type"  class="bg-gray-300  w-full py-2 px-3  text-gray-800" name="num_interior">
-                  </div>
-                </div>
-   
-            <div class=" w-full md:w-1/2  ">
-                     <div class="mr-2 ml-2">
-                   <label for="municipio">Municipio</label>
-               </div>   
-               <div class="mb-4 p-2">
-                 <input type="type"  class="bg-gray-300  w-full py-2 px-3  text-gray-800" name="colonia">
-                </div>
-             </div>
-                                           
-            <div class="w-full md:w-1/2">
-                 <div class="mr-2 ml-2">
-                         <label for="ciudad">Ciudad</label>
-                  </div>   
-            <div class="mb-4 p-2">
-                <input type="type"  class="bg-gray-300  w-full py-2 px-3  text-gray-800" name="num_contacto">
-             </div>
-
-             <div class="   md:text-right py-5 ">
-                    <button class="bg-yellow-400 text-black text-xl  font-bold py-2 px-5 rounded-lg  ml-5 shadow-md mx-auto hover:bg-red-800 hover:text-white" onclick="fijar_direccion()"> Entregar en  esta Dirección </button>
-            </div>
-         </div>
-</div>
-</div>
- 
-
-</form>
-
-
-              
-
-
-
-
-
-
+                    
+                        <div class="w-full  border-t-2 mt-5 py-5">
+                            <div class="mr-2 ml-2 font-bold">
+                                <label for="direccion">Direccion de facturación (calle número de casa o interior, torre, empresa):</label>
+                            </div>
+                    
+                            <div class=" p-2">
+                                <input type="type" class="bg-gray-300  w-full py-2 px-3  text-gray-800" name="direccion">
+                            </div>
+                        </div>
+                    
+                        <div class=" w-full md:w-1/2  ">
+                            <div class="mr-2 ml-2">
+                                <label for="Numero_ext">Número Exterior</label>
+                            </div>
+                            <div class=" p-2">
+                                <input type="type" class="bg-gray-300  w-full py-2 px-3  text-gray-800" name="Numero_ext">
+                            </div>
+                        </div>
+                        <div class="w-full md:w-1/2">
+                            <div class="mr-2 ml-2">
+                                <label for="num_interior">Número interior</label>
+                            </div>
+                            <div class=" p-2">
+                                <input type="type" class="bg-gray-300  w-full py-2 px-3  text-gray-800" name="num_interior">
+                            </div>
+                        </div>
+                    
+                        <div class=" w-full md:w-1/2  ">
+                            <div class="mr-2 ml-2">
+                                <label for="municipio">Municipio</label>
+                            </div>
+                            <div class="mb-4 p-2">
+                                <input type="type" class="bg-gray-300  w-full py-2 px-3  text-gray-800" name="colonia">
+                            </div>
+                        </div>
+                    
+                        <div class="w-full md:w-1/2">
+                            <div class="mr-2 ml-2">
+                                <label for="ciudad">Ciudad</label>
+                            </div>
+                            <div class="mb-4 p-2">
+                                <input type="type" class="bg-gray-300  w-full py-2 px-3  text-gray-800" name="num_contacto">
+                            </div>
+                    
+                            <div class="   md:text-right py-5 ">
+                                <button class="bg-yellow-400 text-black text-xl  font-bold py-2 px-5 rounded-lg  ml-5 shadow-md mx-auto hover:bg-red-800 hover:text-white" onclick="fijar_direccion()"> Entregar en esta Dirección </button>
+                            </div>
+                        </div>
+                    
+                    </div>
 </section>
-
+<!-- fin nueva direccion-->
 
     <!-- Detalle-->
          
@@ -293,9 +382,10 @@
             
             <div class="w-full  md:w-2/3  mb-4">
               <div class="mt-5 px-2">
+                    <div class=" mb-4 mx-2 text-xl">Color: <i class="fas fa-square text-indigo-800 text-4xl "></i>  </div>
                 <ul class=" text-gray-600 text-xl mb-4 mx-2">
-                    <li class="border-b-2">Y9
-                        <span class="float-right">Color: <i class="fas fa-square text-indigo-800 text-4xl"></i>  </span>
+                    <li class="border-b-2 productos_cuadros">Y9
+                      
 
                     </li>
 
