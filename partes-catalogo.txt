@@ -536,3 +536,76 @@ input[type='range'].n.n10:before {
                                         <input type='range' min='1' max='8' value='7' step='1' class="n n8"/>
                                         <input type='range' min='1' max='9' value='8' step='1' class="n n9"/>
                                         -->
+
+
+
+
+                                         
+        <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            
+            <div class="text-black font-bold text-xl mb-2">Envío 1 de 1</div>
+            <p>
+                    Enviar a:Ian Rodrigo Morales Lara. <br>
+                    Prolongación Obsidiana Núm. 29 Interior 101 <br>
+                    Col. Estrella, C.P. 07810 <br>
+                    CDMX,  Álvaro Obregón.
+                    
+            </p>
+
+            <div>
+                    
+                    <div class="w-20 mt-5">
+                        <ul class="flex mb-4">
+                        <li class=" hover:text-red-800 mR-5"><a href="#">Editar</a> </li> 
+                        <li>|</li>
+                        <li class="hover:text-red-800 mx-5"><a href="#">Eliminar</a></li>
+                    </ul>
+                    </div>
+        </div>
+          </div>
+          <div class="flex items-center">
+          
+            <div class="text-2xl">
+              
+               
+              <p class="text-black leading-none">Y9 2019</p>
+              <p class="text-grey-dark text-xl">Huawei | JKM-LX3</p>
+              <p class="text-red-800 font-bold">$5,299.00</p>
+              <div class=" mb-4 text-base">Color: <i class="fas fa-square text-indigo-800 text-2xl "></i>  </div>
+              <p class="text-base">Vendido por: Wireless Newxt INC</p>
+            </div>
+
+          
+          </div>
+        </div>
+
+
+
+
+
+          <div class="border-r border-b border-l border-grey-light lg:border-l-0 lg:border-t lg:border-grey-light bg-white rounded-b lg:rounded-b-none lg:rounded-r p-4 flex flex-col justify-between leading-normal">
+          <div class="mb-8">
+            
+            <div class="text-black font-bold text-xl mb-2">Elige  tu opción de entrega Prime:</div>
+            <ul>
+                <li>
+                <input type="checkbox" name="mensual" value="1"> 
+                <span class="text-sm md:text-base"> Gratis 6-9 días </span> <br>
+                <span class="text-sm md:text-base"> Recíbelo el Domingo 13 de Nov. al Miércoles 23   </span>
+               </li> 
+              
+            </ul>
+
+            <ul class="mt-5">
+                    <li>
+                    <input type="checkbox" name="mensual" value="1"> 
+                    <span class="text-sm md:text-base"> $5,299.00 </span> <br>
+                    <span class="text-sm md:text-base"> Recíbelo el Domingo 25</span>
+                   </li> 
+                  
+                </ul>
+
+          </div>
+          
+        </div>

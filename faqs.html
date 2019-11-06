@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Faqs</title>
+</head>
+<link rel="stylesheet" href="css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+
+
+<script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+<style>
+
+
+<style>
+        button.accordion {
+  width: 100%;
+
+  border: none;
+  outline: none;
+  text-align: left;
+  padding: 15px 20px;
+
+  color: #333;
+  cursor: pointer;
+  transition: background-color 0.2s linear;
+}
+
+button.accordion:hover, button.accordion.is-open {
+  
+  color:#f59542;
+
+}
+
+
+.accordion-content {
+
+  background-color: white;
+  border-left: 1px solid whitesmoke;
+  border-right: 1px solid whitesmoke;
+  padding: 0 20px;
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.2s ease-in-out;
+}
+
+
+    </style>
+
+
+
+
+</style>
+
+<link rel="icon" href="icono_chamo.png">
+<body style="background-image: url('img/ondas_pagina_web.jpg');"> 
+        <div class=" flex  justify-center shadow-lg border rounded mt-5 mx-auto py-10 bg-white"  style="width: 80%;" >
+                <div class="justify-cente mx-10">
+               
+                        <div class="text-gray-700 text-center px-4 py-2 m-2">
+                            <p class="inline-block"> <img src="img/faq_titulo.jpg" alt="Faq"></p>
+                            
+                            <p class="text-xl md:text-3xl  font-bold text-black text-center">
+                                   ¿Tienes preguntas? Seleccione un tema </p>
+                                   <p class=" text_lg pl-2 pr-2  mt-5 text-gray-600 md:text-2xl">Resolvemos todas las dudas que tengas</p>
+                            </div>
+
+                  
+                            <div class="px-10 ">
+                             
+                                <button class="accordion"> <i class="fas fa-angle-down text-blue-500 mr-5 flecha"></i> First Accordion</button>
+                                <div class="accordion-content">
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+                                  </p>
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+                                  </p>
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+                                  </p>
+                                </div>
+                             
+                             
+                                <button class="accordion"> <i class="fas fa-angle-down text-gray-700 text-blue-500 mr-5"></i>Second Accordion</button>
+                                <div class="accordion-content">
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+                                  </p>
+                                </div>
+                             
+                             
+                                <button class="accordion"> <i class="fas fa-angle-down text-gray-700 text-blue-500 mr-5"></i>Third Accordion</button>
+                                <div class="accordion-content">
+                                  <p>
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit. Quas deleniti molestias necessitatibus quaerat quos incidunt! Quas officiis repellat dolore omnis nihil quo, ratione cupiditate! Sed, deleniti, recusandae! Animi, sapiente, nostrum?
+                                  </p>
+                                </div>
+                              </div>
+                              <!-- contend ends here -->
+                </div>
+    
+
+                
+         
+
+                      
+                     
+           
+        </div> 
+</body>
+</html>
+
+<script>
+
+
+
+var accordions = document.getElementsByClassName("accordion");
+
+for (var b = 0; b < accordions.length; b++) {
+  accordions[b].onclick = function() {
+   
+  
+    this.classList.toggle('is-open');
+ 
+    var content = this.nextElementSibling;
+    if (content.style.maxHeight) {
+      // accordion is currently open, so close it
+      content.style.maxHeight = null;
+      flecha.classList.toogle('is-open');
+     
+    } else {
+      // accordion is currently closed, so open it
+      content.style.maxHeight = content.scrollHeight + "px";
+    }
+  }
+}
+
+
+</script>
