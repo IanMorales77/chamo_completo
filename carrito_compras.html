@@ -64,7 +64,7 @@
                     </div>
                     <div class="w-1/6 align-center items-center align-middle content-center flex">
                         <div class="w-full  rounded items-center align-middle align-center flex-1">
-                             <div class="bg-green-600 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 20%" id="step3_b"></div>
+                             <div class="bg-green-600 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 60%" id="step3_b"></div>
                         </div>
                     </div>
                     <div class="flex-1" ">
@@ -76,13 +76,13 @@
                             
                          </div>
                     </div>
-                    <div class="w-1/6 align-center items-center align-middle content-center flex">
+                    <div class="w-1/6 align-center items-center align-middle content-center flex"  id="step4">
                         <div class="w-full bg-grey-light rounded items-center align-middle align-center flex-1">
-                             <div class="bg-green-light text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 0%"></div>
+                             <div class="bg-gray-200 text-xs leading-none py-1 text-center text-grey-darkest rounded " style="width: 10%"></div>
                         </div>
                     </div>
                     <div class="flex-1">
-                        <div class="w-10 h-10 bg-gray-400 border-2  mx-auto rounded-full text-lg text-white flex items-center">
+                        <div class="w-10 h-10 bg-gray-400 border-2  mx-auto rounded-full text-lg text-white flex items-center" id="step4_txt">
                             <span class="text-white text-center w-full"><i class="fas fa-cart-plus w-full fill-current white"></i></span>
                         </div>
                         <div class=" text-gray-400 w-full text-center text-base content-center text-center mt-5 font-bold">
@@ -119,32 +119,29 @@
 
  <div class="flex flex-wrap">
 
-                <div class="w-full border-b-2 mb-4">
+                <div class="w-full border-b-2 mb-4" id="bienvenido">
                     <p class="text-2xl md:text-4xl font-bold mb-2">Bienvenido</p>
-                    <a href="#" onclick="steps('step3', 'step3_b', 'step3_t')">carro</a>
-                    
                     <div class="mb-4"> 
                         Seleccione una dirección de envío. <br>
                         ¿Aparece a continuación la dirección que deseas utilizar? Si es así, haz clic en el botón  <br>
                         "Enviar  a esta dirección". O puedes itroducir una nueva dirección de envio. 
+                        <a href="#" onclick="steps('step3', 'step3_b', 'step3_t')">carro</a>
                     </div>
-
-                    <div class="px-5 py-5 w-full bg-gray-200 font-bold hidden"  id="new_addres">
-                            <div class="text-right"><i class="fas fa-check mt-5 mx-5 hover:text-gray-700 text-2xl text-red-800"></i></div>
-                            <p> 
-                                Ian Rodrigo Morales Lara<br>
-                                VALLADOLID 40 INT 101<br>
-                                COL. ROMA SUR<br>
-                                CIUDAD DE MEXICO, 07810<br>
-                                Teléfono celular: 5540170200
-                            </p>
                 </div>
 
-
-
-
-                </div>
-            <div class= "w-full mt-5  mb-5 md:w-1/4  mx-5 rounded-lg border border-gray-400   bg-gray-200 relative  shadow-lg  cursor-pointer hover:border-gray-700" id="addres1">
+                <div class="px-5 py-5 w-full bg-gray-200 font-bold  hidden"  id="newaddres">
+                    <div class="text-right"><i class="fas fa-check mt-5 mx-5 hover:text-gray-700 text-2xl text-red-800"></i></div>
+                    <p> 
+                        Ian Rodrigo Morales Lara<br>
+                        Salamanca 40 INT 101<br>
+                        COL. ROMA SUR<br>
+                        CIUDAD DE MEXICO, 07810<br>
+                        Teléfono celular: 5540170200
+                    </p>
+            </div>
+<section id="addSecciones">
+    <div class="w-full  flex">
+            <div class= "w-full mt-5  mb-5 md:w-1/4  mx-5 rounded-lg border border-gray-400   bg-gray-200 relative  shadow-lg  cursor-pointer hover:border-gray-700">
                     <div class="px-5 py-5  ">
                                 <p> 
                                     Ian Rodrigo Morales Lara<br>
@@ -186,18 +183,19 @@
                                 </div>
                             </div>
         </div>
-        <div class="w-full mt-5  mb-5 md:w-1/4  mx-5 rounded-lg border border-gray-400   bg-white relative    cursor-pointer hover:border-gray-700"  onclick="document.getElementById('add_adres').style.display='block'">
+        <div class="w-full mt-5  mb-5 md:w-1/4  mx-5 rounded-lg border border-gray-400   bg-white relative    cursor-pointer hover:border-gray-700"  onclick="document.getElementById('addresn').style.display='block'">
             <div class="text-center text-gray-500 "><i class="fas fa-plus add_adress mt-5 hover:text-gray-700 text-4xl"></i>
                 <p class="text-2xl text-black font-bold">Agregar otra dirección</p>
                 <p class="text-gray-700">Asegurate de hacer clic en "Entregar a esta dirección" cuando hayas terminado.</p>
             </div>
         </div>
-               
-
+    
+</div>
+</section>
        
 </section>
 <!-- Añadir una nueva direccion-->
-        <section id="add_adres">
+        <section id="addresn" class="hidden">
 
                 <div class="flex flex-wrap p-10 mt-2 mb-4 rounded-lg border border-gray-400 shadow-lg  cursor-pointer hover:border-gray-700">
 
@@ -443,12 +441,20 @@ function steps(param1, param2, param3){
 
 
 function fijar_direccion(){
-    document.getElementById('new_addres').style.display = 'block';
+  
+    document.getElementById('addSecciones').style.display ='none';  
+    document.getElementById('addresn').style.display ='none';
+    document.getElementById('bienvenido').style.display ='none';
+    document.getElementById('newaddres').style.display ='block';
     document.getElementById('detalle').style.display = 'block';
-    document.getElementById('addres1').style.display = 'none';
-    document.getElementById('addres2').style.display = 'none';
-    document.getElementById('add_adres').style.display ='none';
-    document.getElementById('dir_facuracion').style.display ='none';   
+
+    /* ----miuevo el progress bar ------------- */
+    document.getElementById('step3').style.backgroundColor = '#660000';
+    document.getElementById('step3_b').style.backgroundColor = '#660000';
+    document.getElementById('step3_b').style.width = '100%';
+    document.getElementById('step3_b').style.color ='#660000';
+    
+    
 }
 
 function fijar_envio(){
