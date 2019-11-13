@@ -1,0 +1,423 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema de Ticket</title>
+</head>
+<link rel="stylesheet" href="css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+<link rel="icon" href="icono_chamo.png">
+<body>
+
+  <section>
+    <nav>
+      <div class="flex justify-center mt-5">
+         
+            <div class=" text-center bg-white  hover:bg-purple-800 text-purple-700 hover:text-gray-100 cursor-pointer w-32 h-26 border border-gray-600 mx-2 md:mx-10 uppercase" onclick="btn_ticket()" id="btn_ticket_unselected">
+                <i class="fas fa-equals text-2xl md:text-6xl mt-52"></i>
+                <p class="mb-3">Lista de ticket</p>
+            </div>
+
+            <div class=" text-center bg-purple-800  text-white  cursor-pointer w-32 border border-gray-600 mx-2 md:mx-10 uppercase hidden" onclick="btn_buscar()" id="btn_ticket_selected" >
+            
+              <i class="fas fa-equals text-2xl md:text-6xl mt-2"></i>
+              <p class="mb-3">Lista de ticket</p>
+          </div>
+
+            <div class=" text-center bg-white hover:bg-purple-800 text-purple-700 hover:text-gray-100 cursor-pointer w-32  h-26 border border-gray-600  mx-2 md:mx-10 uppercase" onclick="btn_nuevoticket()" 
+            id="btn_new_ticket_unselected">
+                  <i class="fas fa-plus-circle text-2xl md:text-6xl mt-2"></i>
+                  <p class="mb-3">Nuevo Ticket</p>
+            </div>
+
+            <div class=" text-center bg-purple-800  text-white  cursor-pointer w-32 border border-gray-600 mx-2 md:mx-10  hidden uppercase " 
+            onclick="btn_buscar()" id="bqtn_new_ticket_selected">
+               <i class="fas fa-plus-circle text-2xl md:text-6xl mt-2"></i>
+                  <p class="mb-3">Nuevo Ticket</p>
+            </div>
+    </nav>
+</section>
+<section id="buscador">
+    <div class="justify-center bg-white rounded-lg border border-gray-400 shadow-lg mx-10 mb-5 mt-5  mx-auto" style="width:80%;">
+          <div class="flex mx-10"> <i class="fas fa-search  mt-2 py-2 text-5xl  text-purple-800 "></i>
+          <input class="shadow appearance-none border rounded 
+            text-gray-700 leading-tight focus:outline-none focus:shadow-outline m-2 px-2" id="username" type="text" style="width:90%;">
+          </div>
+      </div>
+</section>
+
+<div class=" mx-auto mt-10 mx-auto w-full" style="width: 80%">
+  
+  
+<section id="ls_ticket">
+        <table width=100%; class= " border-purple-800 border-t-8 border px-2 mb-5 ">
+          <tr>
+             <th>Nombre:</th>
+             <th>Tipo:</th>
+             <th>ID:</th>
+             <th>Teléfono:</th>
+             <th>Saldo</th>
+          </tr>
+          <tr class="text-center">
+              <td>Aplicación</td>
+              <td>Prepaid</td>
+              <td>1000001212121</td>
+              <td>5540112121</td>
+              <td>$100.00</td>
+          </tr>
+        </table>
+
+    <table width=100%; class= " border-purple-800 border-t-8 border px-2 mb-5 ">
+     <tr>
+        <td class="w-20">
+            <div class="bg-black text-gray-100  text-2xl rounded-full h-12 w-12  md:h-16 md:w-16  flex items-center justify-center mx-5">DP</div>  
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td> 
+                <ul class="text-sm flex">
+                  <li class="font-bold mr-2">Status:<span class="font-normal">Solucionado</span></li>
+                  <li class="font-bold mr-2"> #1 <span class="font-normal">Richard Falsone</span></li>
+                  <li class="font-bold mr-2">Creado: <span class="font-normal">17 Dic 2019 9:20 am </span> </li>
+                  <li class="font-bold mr-2">Motivo: <span class="font-normal">Cammbio de Plan </span> </li>
+              </ul></td>
+              <td>               
+                            
+              </td>
+            </tr>
+          </table>
+          <div class=" overflow-y-hidden">
+              <p class="font-bold py-2">
+                  Resumen: <span class="font-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod numquam a odio eaque error placeat adipisci, soluta modi laborum tempore consequatur porro eligendi 
+                  atque obcaecati praesentium expedita reprehenderit ipsam dd.
+
+                </span> </p>
+          </div>
+        </td>
+        <td>
+           <div onclick="document.getElementById('detalle_ticket').style.display = 'block';">
+              <i class="fas fa-share-square text-purple-800 text-3xl hover:text-green-500 px-4"></i>
+            <br> Detalle
+           </div>
+        </td>
+     </tr> 
+     <tr class= " border-purple-800 border-t-2 border px-2  hover:bg-gray-200">
+        <td class="w-20">
+            <div class="bg-black text-gray-100  text-2xl rounded-full h-12 w-12  md:h-16 md:w-16  flex items-center justify-center mx-5">DP</div>  
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td> 
+                <ul class="text-sm flex">
+                  <li class="font-bold mr-2">Status:<span class="font-normal">Solucionado</span></li>
+                  <li class="font-bold mr-2"> #1 <span class="font-normal">Richard Falsone</span></li>
+                  <li class="font-bold mr-2">Creado: <span class="font-normal">17 Dic 2019 9:20 am </span> </li>
+                  <li class="font-bold mr-2">Motivo: <span class="font-normal">Cammbio de Plan </span> </li>
+              </ul></td>
+              <td>               
+                            
+              </td>
+            </tr>
+          </table>
+          <div class=" overflow-y-hidden">
+              <p class="font-bold py-2">
+                  Resumen: <span class="font-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod numquam a odio eaque error placeat adipisci, soluta modi laborum tempore consequatur porro eligendi 
+                  atque obcaecati praesentium expedita reprehenderit ipsam.
+
+                </span> </p>
+          </div>
+        </td>
+        <td>
+            <i class="fas fa-share-square text-purple-800 text-3xl hover:text-green-500 px-4"></i>
+            <br> Detalle
+        </td>
+     </tr>
+     <tr class= " border-purple-800 border-t-2 border px-2  hover:bg-gray-200">
+        <td class="w-20">
+            <div class="bg-black text-gray-100  text-2xl rounded-full h-12 w-12  md:h-16 md:w-16  flex items-center justify-center mx-5">DP</div>  
+        </td>
+        <td>
+          <table>
+            <tr>
+              <td> 
+                <ul class="text-sm flex">
+                  <li class="font-bold mr-2">Status:<span class="font-normal">Solucionado</span></li>
+                  <li class="font-bold mr-2"> #1 <span class="font-normal">Richard Falsone</span></li>
+                  <li class="font-bold mr-2">Creado: <span class="font-normal">17 Dic 2019 9:20 am </span> </li>
+                  <li class="font-bold mr-2">Motivo: <span class="font-normal">Cammbio de Plan </span> </li>
+              </ul></td>
+              <td>               
+                            
+              </td>
+            </tr>
+          </table>
+          <div class=" overflow-y-hidden">
+              <p class="font-bold py-2">
+                  Resumen: <span class="font-normal">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod numquam a odio eaque error placeat adipisci, soluta modi laborum tempore consequatur porro eligendi 
+                  atque obcaecati praesentium expedita reprehenderit ipsam.
+
+                </span> </p>
+          </div>
+        </td>
+        <td>
+            <i class="fas fa-share-square text-purple-800 text-3xl hover:text-green-500 px-4"></i>
+            <br> Detalle
+        </td>
+     </tr>
+    </table>
+</section>
+
+</div>
+
+
+
+
+   <!-- Detalle de tickets-->
+<section id="detalle_ticket" class="hidden">
+      <div class="justify-center bg-white rounded-lg border border-gray-400 shadow-lg mx-10 mb-5 mt-5  mx-auto" style="width:80%;">
+        <table width=100%; class= " border-purple-800 border-t-8 border px-2 mb-5 ">
+          <tr>
+            <td class="w-20">
+                <div class="bg-black text-gray-100  text-2xl rounded-full h-12 w-12  md:h-16 md:w-16  flex items-center justify-center mx-5">DP</div>  
+            </td>
+            <td>
+              <table>
+                <tr>
+                  <td> 
+                    <ul class="text-sm flex">
+                      <li class="font-bold mr-2">Status:<span class="font-normal">Solucionado</span></li>
+                      <li class="font-bold mr-2"> #1 <span class="font-normal">Richard Falsone</span></li>
+                      <li class="font-bold mr-2">Creado: <span class="font-normal">17 Dic 2019 9:20 am </span> </li>
+                      <li class="font-bold mr-2">Motivo: <span class="font-normal">Cammbio de Plan </span> </li>
+                  </ul></td>
+                  <td>                                             
+                  </td>
+                </tr>
+              </table>
+              
+                  <p class="font-bold py-2">
+                      Resumen: <span class="font-normal">
+                      Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod numquam a odio eaque error placeat adipisci, soluta modi laborum tempore consequatur porro eligendi 
+                      atque obcaecati praesentium expedita reprehenderit ipsam.  Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod numquam a odio eaque error placeat adipisci, soluta modi laborum tempore consequatur porro eligendi 
+                      atque obcaecati praesentium expedita reprehenderit ipsam. Detalle
+    
+                    </span> </p>
+              
+            </td>
+            
+          </tr> 
+      </table>
+  </div>
+
+   </section>
+
+ <!--fin detalle-->   
+</div>
+</section>
+
+    <!--Informacion del usuario-->
+<section id="nuevo_ticket" class="mt-10 hidden">
+   
+    <div class="flex flex-wrap mx-auto" style="width: 80%;">
+        <div class="flex w-full justify-start rounded-lg border border-gray-400 shadow-lg mx-10 mb-5  mx-auto">
+            <div class="w-full  text-center text-white bg-purple-800 uppercase">Información del Usuario</div>
+          </div>
+        <table width=100%; class= " border-gray-800 border-2 border px-2 mb-5 text-sm">
+          <tr class="text-center  border-gray-800 border-2 border">
+            <td><p class="font-bold py-2 border-r mr-2 border-gray-400 ">MVNO: <span class="font-normal">Chamo Movil</span> </p></td>
+            <td><p class="font-bold py-2 border-r mr-2 border-gray-400">IMSI: <span class="font-normal">123456789</span> </p></td>
+            <td><p class="font-bold py-2 border-r mr-2 border-gray-400">MSISDN: <span class="font-normal">123456789</span> </p></td>
+            <td><p class="font-bold py-2 border-r mr-2 border-gray-400">MSISDN: <span class="font-normal">123456789</span> </p></td>
+            <td><p class="font-bold py-2">FECHA DE ACTIVACION: <span class="font-normal">10/10/19</span> </p></td>
+          </tr>
+          <tr class="text-center">
+              <td><p class="font-bold py-2 border-r mr-2 border-gray-400">Usuario: <span class="font-normal">Ian Rodrigo</span> </p></td>
+              <td><p class="font-bold py-2 border-r mr-2 border-gray-400">IMEI: <span class="font-normal">123456789</span> </p></td>
+              <td><p class="font-bold py-2 border-r mr-2 border-gray-400">ICCID: <span class="font-normal">123456789</span> </p></td>
+              <td><p class="font-bold py-2 border-r mr-2 border-gray-400">PLAN: <span class="font-normal">123456789</span> </p></td>              
+              <td><p class="font-bold py-2">FECHA DE CORTE: <span class="font-normal">10/10/19</span> </p></td>
+              
+            </tr>
+        </table>
+        <div class="flex w-full justify-start rounded-lg  shadow-lg mx-10 mb-5  mx-auto">
+            <div class="w-1/6 h-7 text-center uppercase border border-gray-400">Status | open</div>
+        </div>
+
+          <div class="flex w-full">
+             <div>  <i class="fas fa-plus-circle text-2xl md:text-5xl text-purple-800 mt-2"></i></div>
+             <div class="uppercase mt-5 ml-5 text-gray-700 font-bold">ticket | No | Ian Rodrigo </div>
+          </div>
+
+          <div class="flex w-full mb-4 mt-5">
+              <div class="w-1/3 bg-gray-400 text-center mx-5">
+                <button class=" text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner w-full">Fecha de Creación </button>
+                <input  class="w-full bg-white py-2" type="date" id="start" name="trip-start"
+                       value="2018-07-22"
+                       min="2018-01-01" max="2018-12-31">
+              </div>
+              <div class="w-1/3 text-center mx-5 ">
+                <button class=" text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner w-full">Severidad </button>
+                  <select class="w-full bg-white py-2">
+                    <option value="0">Seleccione una opcción</option>
+                    <option value="tg1">opcion 1</option>
+                    <option value="tg2">opccion1 21</option>
+                    <option value="tg3">Targeta 3</option>
+                  </select> 
+              </div>
+              <div class="w-1/3 bg-gray-400 h-12 mx-5">
+                <button class=" text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner w-full">Status </button>
+                  <select class="w-full bg-white py-2">
+                    <option value="0">Status</option>
+                    <option value="tg1">opcion 1</option>
+                    <option value="tg2">opccion1 21</option>
+                    <option value="tg3">Targeta 3</option>
+                  </select>               
+              </div>
+            </div>
+            <div class="flex w-full mb-4 mt-5">
+                <div class="w-1/3 bg-gray-400 text-center mx-5">
+                  <button class=" text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner w-full">Fecha de cierre </button>
+                  <input  class="w-full bg-white py-2" type="date" id="start" name="trip-start"
+                         value="2018-07-22"
+                         min="2018-01-01" max="2018-12-31">
+                </div>
+                <div class="w-1/3 text-center mx-5 ">
+                  <button class=" text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner w-full">Producto </button>
+                    <select class="w-full bg-white py-2">
+                      <option value="0">Asignar Ticket</option>
+                      <option value="tg1">opcion 1</option>
+                      <option value="tg2">opccion1 21</option>
+                      <option value="tg3">Targeta 3</option>
+                    </select> 
+                </div>
+                <div class="w-1/3 bg-gray-400 h-12 mx-5">
+                  <button class=" text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner w-full">Asignar Ticket</button>
+                    <select class="w-full bg-white py-2">
+                      <option value="0">Asignar Ticket</option>
+                      <option value="tg1">opcion 1</option>
+                      <option value="tg2">opccion1 21</option>
+                      <option value="tg3">Targeta 3</option>
+                    </select>               
+                </div>
+              </div>
+              <div class="flex w-full mb-4 mt-5">
+                  <div class="w-1/3 bg-gray-400 text-center mx-5">
+                    <button class=" text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner w-full">Incidencia adm</button>
+                    <select class="w-full bg-white py-2">
+                        <option value="0">Asignar Ticket</option>
+                        <option value="tg1">opcion 1</option>
+                        <option value="tg2">opccion1 21</option>
+                        <option value="tg3">Targeta 3</option>
+                      </select> 
+                  </div>
+                  <div class="w-1/3 text-center mx-5 ">
+                    <button class=" text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner w-full">Inciedencia Técnica </button>
+                      <select class="w-full bg-white py-2">
+                        <option value="0">Asignar Ticket</option>
+                        <option value="tg1">opcion 1</option>
+                        <option value="tg2">opccion1 21</option>
+                        <option value="tg3">Targeta 3</option>
+                      </select> 
+                  </div>
+                  <div class="w-1/3 bg-gray-400 h-12 mx-5">
+                    <button class=" text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner w-full">Relacionar</button>
+                      <select class="w-full bg-white py-2">
+                        <option value="0">Asignar Ticket</option>
+                        <option value="tg1">opcion 1</option>
+                        <option value="tg2">opccion1 21</option>
+                        <option value="tg3">Targeta 3</option>
+                      </select>               
+                  </div>
+                </div>    
+    </div>
+
+    <div class="flex flex-wrap mx-auto mx-5" style="width: 80%;">
+        <div class="w-1/2 h-7 text-center text-white uppercase border border-gray-400 rounded bg-purple-800">Descripción de incidencia</div>
+        <textarea rows="5" cols="33" class="bg-white appearance-none border-2 border-gray-400 rounded w-full py-2 px-4 text-indigo-700 leading-tight focus:outline-none focus:bg-white focus:border-red-500 " placeholder="Describe yourself here..." id="entrada"></textarea>
+        <button class=" w-1/3 text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner mt-5 py-2 hover:bg-purple-400 hover:text-purple-800">Guardar</button>
+        <div class="flex w-full mt-5">
+          <div>  <i class="fas fa-plus-circle text-2xl md:text-5xl text-purple-800 mt-2"></i></div>
+          <div class="uppercase mt-5 ml-5 text-gray-700 font-bold">Añadir Nota </div>
+        </div>
+</div>
+
+
+
+
+</section>
+</body> 
+</html>
+
+<script>
+
+var busco = false;
+function btn_buscar(){
+    
+    document.getElementById('buscador').style.display ='block';
+    document.getElementById('btn_buscar_selected').style.display = 'block';
+    document.getElementById('btn_buscar_unselected').style.display = 'none'; 
+    
+    document.getElementById('btn_ticket_selected').style.display = 'none';
+    document.getElementById('btn_ticket_unselected').style.display = 'block';
+    document.getElementById('btn_new_ticket_unselected').style.display = 'block';
+    document.getElementById('btn_new_ticket_selected').style.display = 'none';
+
+    document.getElementById('ls_ticket').style.display = 'none';
+    document.getElementById('nuevo_ticket').style.display = 'none';
+    document.getElementById('notas').style.display ='none';
+   
+}
+
+function btn_ticket(){
+    
+   
+    document.getElementById('notas').style.display = 'block';
+    document.getElementById('btn_ticket_selected').style.display = 'block';
+    document.getElementById('btn_ticket_unselected').style.display = 'none';
+    document.getElementById('btn_buscar_selected').style.display = 'none';
+    document.getElementById('btn_buscar_unselected').style.display = 'block';
+    document.getElementById('btn_new_ticket_unselected').style.display = 'block';
+    document.getElementById('btn_new_ticket_selected').style.display = 'none';
+    
+    document.getElementById('btn_buscar_selected').style.display = 'none';
+    
+    document.getElementById('buscador').style.display = 'none';
+    document.getElementById('nuevo_ticket').style.display = 'none';
+   
+   
+}
+
+function btn_nuevoticket(){
+    
+   
+    document.getElementById('nuevo_ticket').style.display = 'block';
+
+    
+    
+    document.getElementById('btn_new_ticket_selected').style.display = 'block';
+    document.getElementById('btn_new_ticket_unselected').style.display = 'none';
+    document.getElementById('btn_buscar_selected').style.display = 'none';
+    document.getElementById('btn_buscar_unselected').style.display = 'block'; 
+    document.getElementById('btn_ticket_selected').style.display = 'none';
+   
+
+   
+    document.getElementById('btn_ticket_unselected').style.display = 'block';
+   
+    
+    document.getElementById('btn_buscar_unselected').style.display = 'block'; 
+    document.getElementById('buscador').style.display = 'none';
+    document.getElementById('notas').style.display ='none';
+   
+   
+}
+
+</script>
