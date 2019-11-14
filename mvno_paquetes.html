@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sistema de Ticket</title>
+</head>
+<link rel="stylesheet" href="css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+<link rel="icon" href="icono_chamo.png">
+<body>
+
+
+
+<div class="flex flex-wrap mx-auto mx-5 mt-5" style="width: 80%;">
+    <div class="w-1/3">
+      <div class="text-white text-center bg-purple-800"><i class="fas fa-cubes"></i> 
+        Paquetes</div>
+        
+          <ul class="px-2 mb-5 mt-5">
+            <li><i class="fas fa-cubes"></i>Paquete 1 </li>
+            <ul class="px-5">
+              <li>Suplemento 1</li>
+              <li>Suplemento 2</li>
+            </ul>
+          </ul>
+    
+          <ul class="px-2 mb-5">
+            <li><i class="fas fa-cubes"></i>Paquete 2 </li>
+            <ul class="px-5">
+              <li>Suplemento 1</li>
+              <li>Suplemento 2</li>
+            </ul>
+          </ul>
+
+
+          <ul class="px-2 mb-5">
+            <li><i class="fas fa-cubes"></i>Paquete 3 </li>
+            <ul class="px-5">
+              <li>Suplemento 1</li>
+              <li>Suplemento 2</li>
+            </ul>
+          </ul>
+    </div>
+    <div class="w-2/3  px-4">
+      <section id="sept1" >
+     <!--- <form>-->
+          <div class="block lg:flex  shadow-lg rounded-lg shadow bg-purple-200">             
+              <div class=" w-2/3 px-6 py-5 ml-10">
+                  <div class="tracking-widest text-2xl"> Base Paquete</div>
+                 
+                      <div class="mb-4">
+                          <label for="base_paquete" class="block mb-2 text-sm text-gray-800">Nombre</label>
+                          <input type="text" name="nombre" class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" >
+                          
+                      </div>
+                      <div class="mb-4">
+                          <label for="password" class="block mb-2 text-sm text-gray-800">Precio</label>
+                          <input type="text" name="precio"  class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" >                   
+                      </div>   
+                <div class="tracking-widest text-xl">Configuracion de Módulo</div>               
+                    <div class="mb-4">
+                        <label for="base_paquete" class="block mb-2 text-sm text-gray-800">Capacidad de datos</label>
+                        <select class="w-full py-2 px-3 ">
+                        
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                          <option value="25">25</option>
+                          <option value="50">50</option>
+                          <option value="75">75</option>
+                          <option value="100">100</option>
+                          <option value="200">200</option>
+                        </select>    
+                        <p class="mt-2">Movilidad: 100Mb, 500 Mb,  1Gb, 5Gb</p>                  
+                    </div>
+                    <button class=" w-full text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner mt-16 py-2 px-3 hover:bg-purple-400 hover:text-purple-800" onclick="btn_siguiente()">Siguiente</button>
+            </div> 
+    </div>
+  </form>
+</section>
+      <section id="sept2" class="hidden">
+                <form>
+                    <div class="block lg:flex  shadow-lg rounded-lg shadow bg-purple-200">             
+                        <div class=" w-2/3 px-6 py-5 ml-10">
+                            <div class=tracking-widest mb-4">Opcional, el paquete tiene suplementos ¿quieres configurarlos para usarlos?</div>          
+                                <div>
+                                    <label for="base_paquete" class="block mb-2 text-sm text-gray-800">Nombre</label>
+                                    <input type="text" name="nombre" class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none">                    
+                                </div>
+                              <button class=" w-full text-white bg-purple-800 uppercase font-bold uppercase rounded text-white shadow-inner mt-16 py-2 px-3 hover:bg-purple-400 hover:text-purple-800">Guardar</button>
+                      </div> 
+              </div>
+              </form>
+      </section>
+
+</div>
+</div>
+
+
+</body> 
+</html>
+
+<script>
+
+function btn_siguiente() {
+    document.getElementById('sept1').style.display = 'none';
+    document.getElementById('sept2').style.display = 'block';
+}
+
+</script>

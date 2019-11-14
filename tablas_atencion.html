@@ -34,7 +34,7 @@
             </div>
 
             <div class=" text-center bg-purple-800  text-white  cursor-pointer w-32 border border-gray-600 mx-2 md:mx-10  hidden uppercase " 
-            onclick="btn_buscar()" id="bqtn_new_ticket_selected">
+            onclick="btn_buscar()" id="btn_new_ticket_selected">
                <i class="fas fa-plus-circle text-2xl md:text-6xl mt-2"></i>
                   <p class="mb-3">Nuevo Ticket</p>
             </div>
@@ -52,7 +52,7 @@
 <div class=" mx-auto mt-10 mx-auto w-full" style="width: 80%">
   
   
-<section id="ls_ticket">
+<section id="ls_ticket" class="hidden">
         <table width=100%; class= " border-purple-800 border-t-8 border px-2 mb-5 ">
           <tr>
              <th>Nombre:</th>
@@ -64,7 +64,7 @@
           <tr class="text-center">
               <td>Aplicación</td>
               <td>Prepaid</td>
-              <td>1000001212121</td>
+              <td>1000001212177</td>
               <td>5540112121</td>
               <td>$100.00</td>
           </tr>
@@ -100,7 +100,7 @@
           </div>
         </td>
         <td>
-           <div onclick="document.getElementById('detalle_ticket').style.display = 'block';">
+           <div onclick="btn_detalle()">
               <i class="fas fa-share-square text-purple-800 text-3xl hover:text-green-500 px-4"></i>
             <br> Detalle
            </div>
@@ -158,7 +158,7 @@
               </td>
             </tr>
           </table>
-          <div class=" overflow-y-hidden">
+          <div class="overflow-y-hidden">
               <p class="font-bold py-2">
                   Resumen: <span class="font-normal">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod numquam a odio eaque error placeat adipisci, soluta modi laborum tempore consequatur porro eligendi 
@@ -358,66 +358,44 @@
 
 <script>
 
-var busco = false;
-function btn_buscar(){
-    
-    document.getElementById('buscador').style.display ='block';
-    document.getElementById('btn_buscar_selected').style.display = 'block';
-    document.getElementById('btn_buscar_unselected').style.display = 'none'; 
-    
-    document.getElementById('btn_ticket_selected').style.display = 'none';
-    document.getElementById('btn_ticket_unselected').style.display = 'block';
-    document.getElementById('btn_new_ticket_unselected').style.display = 'block';
-    document.getElementById('btn_new_ticket_selected').style.display = 'none';
-
-    document.getElementById('ls_ticket').style.display = 'none';
-    document.getElementById('nuevo_ticket').style.display = 'none';
-    document.getElementById('notas').style.display ='none';
-   
-}
-
 function btn_ticket(){
     
-   
-    document.getElementById('notas').style.display = 'block';
+  
+    document.getElementById('ls_ticket').style.display = 'block';
     document.getElementById('btn_ticket_selected').style.display = 'block';
     document.getElementById('btn_ticket_unselected').style.display = 'none';
-    document.getElementById('btn_buscar_selected').style.display = 'none';
-    document.getElementById('btn_buscar_unselected').style.display = 'block';
     document.getElementById('btn_new_ticket_unselected').style.display = 'block';
     document.getElementById('btn_new_ticket_selected').style.display = 'none';
+ 
     
-    document.getElementById('btn_buscar_selected').style.display = 'none';
+}
+
+function btn_detalle(){
     
-    document.getElementById('buscador').style.display = 'none';
+  
+    document.getElementById('ls_ticket').style.display = 'none';
+    document.getElementById('btn_ticket_selected').style.display = 'block';
+    document.getElementById('btn_ticket_unselected').style.display = 'none';
+    document.getElementById('btn_new_ticket_unselected').style.display = 'block';
+    document.getElementById('btn_new_ticket_selected').style.display = 'none';
+    document.getElementById('detalle_ticket').style.display = 'block';
     document.getElementById('nuevo_ticket').style.display = 'none';
-   
-   
+ 
+    
 }
 
 function btn_nuevoticket(){
     
    
     document.getElementById('nuevo_ticket').style.display = 'block';
-
-    
-    
-    document.getElementById('btn_new_ticket_selected').style.display = 'block';
-    document.getElementById('btn_new_ticket_unselected').style.display = 'none';
-    document.getElementById('btn_buscar_selected').style.display = 'none';
-    document.getElementById('btn_buscar_unselected').style.display = 'block'; 
+    document.getElementById('ls_ticket').style.display = 'none';
     document.getElementById('btn_ticket_selected').style.display = 'none';
-   
-
-   
     document.getElementById('btn_ticket_unselected').style.display = 'block';
-   
     
-    document.getElementById('btn_buscar_unselected').style.display = 'block'; 
-    document.getElementById('buscador').style.display = 'none';
-    document.getElementById('notas').style.display ='none';
-   
-   
+    document.getElementById('btn_new_ticket_unselected').style.display = 'none';
+    document.getElementById('btn_new_ticket_selected').style.display = 'block';
+    document.getElementById('detalle_ticket').style.display = 'none';
+ 
 }
 
 </script>
