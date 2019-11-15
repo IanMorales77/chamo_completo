@@ -21,7 +21,7 @@
                 <p class="mb-3">Lista de ticket</p>
             </div>
 
-            <div class=" text-center bg-purple-800  text-white  cursor-pointer w-32 border border-gray-600 mx-2 md:mx-10 uppercase hidden" onclick="btn_buscar()" id="btn_ticket_selected" >
+            <div class=" text-center bg-purple-800  text-white  cursor-pointer w-32 border border-gray-600 mx-2 md:mx-10 uppercase hidden" onclick="btn_ticket()" id="btn_ticket_selected" >
             
               <i class="fas fa-equals text-2xl md:text-6xl mt-2"></i>
               <p class="mb-3">Lista de ticket</p>
@@ -90,7 +90,7 @@
               </td>
             </tr>
           </table>
-          <div class=" overflow-y-hidden">
+          <div class="overflow-y-hidden">
               <p class="font-bold py-2">
                   Resumen: <span class="font-normal">
                   Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem quod numquam a odio eaque error placeat adipisci, soluta modi laborum tempore consequatur porro eligendi 
@@ -362,11 +362,11 @@ function btn_ticket(){
     
   
     document.getElementById('ls_ticket').style.display = 'block';
+    document.getElementById('nuevo_ticket').style.display = 'none';
     document.getElementById('btn_ticket_selected').style.display = 'block';
     document.getElementById('btn_ticket_unselected').style.display = 'none';
     document.getElementById('btn_new_ticket_unselected').style.display = 'block';
     document.getElementById('btn_new_ticket_selected').style.display = 'none';
- 
     
 }
 
@@ -379,7 +379,7 @@ function btn_detalle(){
     document.getElementById('btn_new_ticket_unselected').style.display = 'block';
     document.getElementById('btn_new_ticket_selected').style.display = 'none';
     document.getElementById('detalle_ticket').style.display = 'block';
-    document.getElementById('nuevo_ticket').style.display = 'none';
+    document.getElementById('nuevo_ticket').style.display ='none';
  
     
 }
