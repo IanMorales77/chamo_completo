@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chamo Movil</title>
+    <meta name="description" content="Más que un servicio de Telefonía Móvil, es la Comunidad más grande de Venozolanos en México">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+   
+
+    <script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+
+    <link rel="icon" href="icono_chamo.png">
+    <style>
+
+        body {
+            font-family: 'Poppins', sans-serif; 
+            font-weight: 400;
+        }
+        
+        .home_run {
+            
+            position: relative;
+            margin-top: 100px;
+
+        }
+
+        /* Social Icons */
+    #social_side_links {
+    position: fixed;
+    top: 150px;
+    left:0;
+    padding: 0;
+    list-style: none;
+    z-index: 99;
+    background-color: white;
+    }
+
+
+    #up {
+    position: fixed;
+    top: 5px;
+    right:0;
+    padding: 0;
+    list-style: none;
+    z-index: 99;
+    
+    }
+    #social_side_links li a {display: block;}
+
+    #social_side_links li a img {
+    font-size: 30px;
+    display: block;
+    max-width:50px;
+    padding: 10px;
+    -webkit-transition: background .2s ease-in-out;
+    -moz-transition:  background .2s ease-in-out;
+    -o-transition:  background .2s ease-in-out;
+    transition:  background .2s ease-in-out;
+    }
+
+   #paso2, #paso3, #paso4 {
+       display: none;
+   }
+
+html {
+  scroll-behavior: smooth;
+}
+
+
+
+
+
+button.accordion:hover, button.accordion.is-open {
+  
+  color:#f59542;
+
+}
+
+.MyDialog {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    width: 75%;
+    
+}
+
+    </style>
+</head>
+<body id="arriba">
+<div class="flex justify-center py-3">
+            <div class=" text-center  m-2 px-4 border-r-2 border-gray-400"> 
+                <div class="  cursor-pointer text-xl px-4 m-2  bg-red-900  text-white font-extrabold  md:text-2xl font-bold py-2 px-5 rounded-lg mx-auto m-5 w-32  md:w-48  hover:bg-gray-100 hover:text-red-800 hover:border-red-800 border-2" onclick="planes();">
+                <h2> Planes </h2> </div>
+            </div>
+             <div class=" text-center  px-4 m-2"> 
+                <div class=" cursor-pointer  text-xl bg-gray-100  text-red-800  border-red-800 border-2 font-extrabold  md:text-2xl font-bold py-2 px-5 rounded-lg mx-auto m-5  w-32 md:w-48  hover:bg-red-900 hover:text-white" onclick="telefonos()">
+                <h2>Telefonos</h2>  </div>
+             </div>
+</div>
+
+<section  id="planes">
+    <div class="flex flex-wrap  w-2/3 py-5 bg-yellow-400 overflow-hidden mx-auto ">
+                    
+      
+    <div class=" flex bg-indigo-400 relative" id="panel_1" style="width: 1200px;">                   
+                <div class="w-full md:w-1/3 mx-10">          
+                        <div class=" mx-auto w-64  bg-white   rounded-lg border border-gray-400 shadow-lg hover:border-red-800">
+                                <div class="flex items-center justify-center ">
+                                    <div class="max-w-sm w-full sm:w-full lg:w-full ">
+                                            <div class="p-2">
+                                                <h3  class="text-2xl text-center text-gray-900 ">Plan  <strong>Mérida</strong> </h3>
+                                            </div>
+                                        <div class=" shadow-xl  overflow-hidden">
+                                            <div class="bg-cover bg-center h-40 p-4" style="background-image: url('img/col-verde-710.jpg')">                                               
+                                            </div>
+                                            <div class="p-2 w-56  mx-auto ">
+                                                    <img src="img/sim_card.jpg" alt="Sim" class="float-left ml-5 mr-2">
+                                              <p class="text-4xl text-gray-900 font-extrabold"> $750 </p>
+                                            </div>           
+                                            <div class="w-56 p-2 mx-auto  text-gray-700">
+                                                <div class="flex-1 inline-flex items-center">
+                                                        <p class="text-gray-900 text-lg uppercase font-bold">Ilimitado</p>
+                                                </div>
+                                                <div class="flex-1 inline-flex items-center">
+                                                        <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/facebook-square-brands.svg" alt="Facebook">
+                                                        <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/instagram-brands.svg" alt="instagram">
+                                                        <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/twitter-square-brands.svg" alt="twitter">
+                                                </div>
+                                            </div>
+                                            <div class="px-4  pb-4  ">
+                                                <div class="text-center uppercase  text-gray-600 tracking-wide">SMS | llamdas | Redes Sociales <br><span class="text-gray-800 font-bold">2Gb Lbres</span>  </div>
+                                                <p class="text-center"><button class="bg-yellow-400 text-black  font-bold py-2 px-3 rounded-lg  ml-5"> Comprar </button></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                        </div>
+                        <div class="w-full md:w-1/3 mx-7">          
+                            <div class=" mx-auto w-64  bg-white   rounded-lg border border-gray-400 shadow-lg hover:border-red-800">
+                                    <div class="flex items-center justify-center ">
+                                        <div class="max-w-sm w-full sm:w-full lg:w-full ">
+                                                <div class="p-2">
+                                                    <h3  class="text-2xl text-center text-gray-900 ">Plan  <strong>Mérida</strong> </h3>
+                                                </div>
+                                            <div class=" shadow-xl  overflow-hidden">
+                                                <div class="bg-cover bg-center h-40 p-4" style="background-image: url('img/col-verde-710.jpg')">                                                  
+                                                </div>
+                                                <div class="p-2 w-56  mx-auto ">
+                                                        <img src="img/sim_card.jpg" alt="Sim" class="float-left ml-5 mr-2">
+                                                  <p class="text-4xl text-gray-900 font-extrabold"> $750 </p>
+                                                </div>               
+                                                <div class="w-56 p-2 mx-auto  text-gray-700">
+                                                    <div class="flex-1 inline-flex items-center">
+                                                            <p class="text-gray-900 text-lg uppercase font-bold">Ilimitado</p>
+                                                    </div>
+                                                    <div class="flex-1 inline-flex items-center">
+                                                            <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/facebook-square-brands.svg" alt="Facebook">
+                                                            <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/instagram-brands.svg" alt="instagram">
+                                                            <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/twitter-square-brands.svg" alt="twitter">
+                                                    </div>
+                                                </div>
+                                                <div class="px-4  pb-4  ">
+                                                    <div class="text-center uppercase  text-gray-600 tracking-wide">SMS | llamdas | Redes Sociales <br><span class="text-gray-800 font-bold">2Gb Lbres</span>  </div>
+                                                    <p class="text-center"><button class="bg-yellow-400 text-black  font-bold py-2 px-3 rounded-lg  ml-5"> Comprar </button></p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                        </div>                   
+                        <div class="w-full md:w-1/3 mx-10">          
+                            <div class=" mx-auto w-64  bg-white   rounded-lg border border-gray-400 shadow-lg hover:border-red-800">
+                                    <div class="flex items-center justify-center ">
+                                        <div class="max-w-sm w-full sm:w-full lg:w-full ">
+                                                <div class="p-2">
+                                                    <h3  class="text-2xl text-center text-gray-900 ">Plan  <strong>Mérida</strong> </h3>
+                                                </div>
+                                            <div class=" shadow-xl  overflow-hidden">
+                                                <div class="bg-cover bg-center h-40 p-4" style="background-image: url('img/col-verde-710.jpg')">                                                  
+                                                </div>
+                                                <div class="p-2 w-56  mx-auto ">
+                                                        <img src="img/sim_card.jpg" alt="Sim" class="float-left ml-5 mr-2">
+                                                  <p class="text-4xl text-gray-900 font-extrabold"> $750 </p>
+                                                </div>              
+                                                <div class="w-56 p-2 mx-auto  text-gray-700">
+                                                    <div class="flex-1 inline-flex items-center">
+                                                            <p class="text-gray-900 text-lg uppercase font-bold">Ilimitado</p>
+                                                    </div>
+                                                    <div class="flex-1 inline-flex items-center">
+                                                            <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/facebook-square-brands.svg" alt="Facebook">
+                                                            <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/instagram-brands.svg" alt="instagram">
+                                                            <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/twitter-square-brands.svg" alt="twitter">
+                                                    </div>
+                                                </div>
+                                                <div class="px-4  pb-4  ">
+                                                    <div class="text-center uppercase  text-gray-600 tracking-wide">SMS | llamdas | Redes Sociales <br><span class="text-gray-800 font-bold">2Gb Lbres</span>  </div>
+                                                    <p class="text-center"><button class="bg-yellow-400 text-black  font-bold py-2 px-3 rounded-lg  ml-5"> Comprar </button></p>
+                                                </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div> 
+                                
+                                <div class="w-full md:w-1/3 mx-10">          
+                                    <div class=" mx-auto w-64  bg-white   rounded-lg border border-gray-400 shadow-lg hover:border-red-800">
+                                            <div class="flex items-center justify-center ">
+                                                <div class="max-w-sm w-full sm:w-full lg:w-full ">
+                                                        <div class="p-2">
+                                                            <h3  class="text-2xl text-center text-gray-900 ">Plan  <strong>Mérida</strong> </h3>
+                                                        </div>
+                                                    <div class=" shadow-xl  overflow-hidden">
+                                                        <div class="bg-cover bg-center h-40 p-4" style="background-image: url('img/col-verde-710.jpg')">                                                  
+                                                        </div>
+                                                        <div class="p-2 w-56  mx-auto ">
+                                                                <img src="img/sim_card.jpg" alt="Sim" class="float-left ml-5 mr-2">
+                                                          <p class="text-4xl text-gray-900 font-extrabold"> $750 </p>
+                                                        </div>              
+                                                        <div class="w-56 p-2 mx-auto  text-gray-700">
+                                                            <div class="flex-1 inline-flex items-center">
+                                                                    <p class="text-gray-900 text-lg uppercase font-bold">Ilimitado</p>
+                                                            </div>
+                                                            <div class="flex-1 inline-flex items-center">
+                                                                    <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/facebook-square-brands.svg" alt="Facebook">
+                                                                    <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/instagram-brands.svg" alt="instagram">
+                                                                    <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/twitter-square-brands.svg" alt="twitter">
+                                                            </div>
+                                                        </div>
+                                                        <div class="px-4  pb-4  ">
+                                                            <div class="text-center uppercase  text-gray-600 tracking-wide">SMS | llamdas | Redes Sociales <br><span class="text-gray-800 font-bold">2Gb Lbres</span>  </div>
+                                                            <p class="text-center"><button class="bg-yellow-400 text-black  font-bold py-2 px-3 rounded-lg  ml-5"> Comprar </button></p>
+                                                        </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>    
+
+        </div>
+               
+         <!--panel 2-->       
+         <div class=" flex w-full  bg-indigo-400 hidden relative" id="panel_2">                   
+            <div class="w-full md:w-1/3">          
+                    <div class=" mx-auto w-64  bg-white   rounded-lg border border-gray-400 shadow-lg hover:border-red-800">
+                            <div class="flex items-center justify-center ">
+                                <div class="max-w-sm w-full sm:w-full lg:w-full ">
+                                        <div class="p-2">
+                                            <h3  class="text-2xl text-center text-gray-900 ">Plan  <strong>Mérida</strong> </h3>
+                                        </div>
+                                    <div class=" shadow-xl  overflow-hidden">
+                                        <div class="bg-cover bg-center h-40 p-4" style="background-image: url('img/col-verde-710.jpg')">                                               
+                                        </div>
+                                        <div class="p-2 w-56  mx-auto ">
+                                                <img src="img/sim_card.jpg" alt="Sim" class="float-left ml-5 mr-2">
+                                          <p class="text-4xl text-gray-900 font-extrabold"> $750 </p>
+                                        </div>           
+                                        <div class="w-56 p-2 mx-auto  text-gray-700">
+                                            <div class="flex-1 inline-flex items-center">
+                                                    <p class="text-gray-900 text-lg uppercase font-bold">Ilimitado</p>
+                                            </div>
+                                            <div class="flex-1 inline-flex items-center">
+                                                    <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/facebook-square-brands.svg" alt="Facebook">
+                                                    <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/instagram-brands.svg" alt="instagram">
+                                                    <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/twitter-square-brands.svg" alt="twitter">
+                                            </div>
+                                        </div>
+                                        <div class="px-4  pb-4  ">
+                                            <div class="text-center uppercase  text-gray-600 tracking-wide">SMS | llamdas | Redes Sociales <br><span class="text-gray-800 font-bold">2Gb Lbres</span>  </div>
+                                            <p class="text-center"><button class="bg-yellow-400 text-black  font-bold py-2 px-3 rounded-lg  ml-5"> Comprar </button></p>
+                                        </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                    <div class="w-full md:w-1/3">          
+                        <div class=" mx-auto w-64  bg-white   rounded-lg border border-gray-400 shadow-lg hover:border-red-800">
+                                <div class="flex items-center justify-center ">
+                                    <div class="max-w-sm w-full sm:w-full lg:w-full ">
+                                            <div class="p-2">
+                                                <h3  class="text-2xl text-center text-gray-900 ">Plan  <strong>Mérida</strong> </h3>
+                                            </div>
+                                        <div class=" shadow-xl  overflow-hidden">
+                                            <div class="bg-cover bg-center h-40 p-4" style="background-image: url('img/col-verde-710.jpg')">                                                  
+                                            </div>
+                                            <div class="p-2 w-56  mx-auto ">
+                                                    <img src="img/sim_card.jpg" alt="Sim" class="float-left ml-5 mr-2">
+                                              <p class="text-4xl text-gray-900 font-extrabold"> $750 </p>
+                                            </div>               
+                                            <div class="w-56 p-2 mx-auto  text-gray-700">
+                                                <div class="flex-1 inline-flex items-center">
+                                                        <p class="text-gray-900 text-lg uppercase font-bold">Ilimitado</p>
+                                                </div>
+                                                <div class="flex-1 inline-flex items-center">
+                                                        <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/facebook-square-brands.svg" alt="Facebook">
+                                                        <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/instagram-brands.svg" alt="instagram">
+                                                        <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/twitter-square-brands.svg" alt="twitter">
+                                                </div>
+                                            </div>
+                                            <div class="px-4  pb-4  ">
+                                                <div class="text-center uppercase  text-gray-600 tracking-wide">SMS | llamdas | Redes Sociales <br><span class="text-gray-800 font-bold">2Gb Lbres</span>  </div>
+                                                <p class="text-center"><button class="bg-yellow-400 text-black  font-bold py-2 px-3 rounded-lg  ml-5"> Comprar </button></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                    </div>                   
+                    <div class="w-full md:w-1/3">          
+                        <div class=" mx-auto w-64  bg-white   rounded-lg border border-gray-400 shadow-lg hover:border-red-800">
+                                <div class="flex items-center justify-center ">
+                                    <div class="max-w-sm w-full sm:w-full lg:w-full ">
+                                            <div class="p-2">
+                                                <h3  class="text-2xl text-center text-gray-900 ">Plan  <strong>Mérida</strong> </h3>
+                                            </div>
+                                        <div class=" shadow-xl  overflow-hidden">
+                                            <div class="bg-cover bg-center h-40 p-4" style="background-image: url('img/col-verde-710.jpg')">                                                  
+                                            </div>
+                                            <div class="p-2 w-56  mx-auto ">
+                                                    <img src="img/sim_card.jpg" alt="Sim" class="float-left ml-5 mr-2">
+                                              <p class="text-4xl text-gray-900 font-extrabold"> $750 </p>
+                                            </div>              
+                                            <div class="w-56 p-2 mx-auto  text-gray-700">
+                                                <div class="flex-1 inline-flex items-center">
+                                                        <p class="text-gray-900 text-lg uppercase font-bold">Ilimitado</p>
+                                                </div>
+                                                <div class="flex-1 inline-flex items-center">
+                                                        <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/facebook-square-brands.svg" alt="Facebook">
+                                                        <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/instagram-brands.svg" alt="instagram">
+                                                        <img  class="h-6 w-6 text-gray-600 fill-current mr-2" src="img/twitter-square-brands.svg" alt="twitter">
+                                                </div>
+                                            </div>
+                                            <div class="px-4  pb-4  ">
+                                                <div class="text-center uppercase  text-gray-600 tracking-wide">SMS | llamdas | Redes Sociales <br><span class="text-gray-800 font-bold">2Gb Lbres</span>  </div>
+                                                <p class="text-center"><button class="bg-yellow-400 text-black  font-bold py-2 px-3 rounded-lg  ml-5"> Comprar </button></p>
+                                            </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>                
+    </div>         
+               <!--contenedor-->                 
+        </div>
+
+
+        <div class=" flex justify-center">
+                <div class="text-gray-700 text-center px-4 py-2 m-2 cursor-pointer hover:text-red-600" id="animo"><i class="fas fa-circle"></i></div>
+                <div class="text-gray-700 text-center px-4 py-2 m-2" id="animo2"><i class="fas fa-circle"></i></div>
+                <div class="text-gray-700 text-center  px-4 py-2 m-2"><i class="fas fa-circle"></i></div>
+        </div>    
+
+         
+
+
+        
+</section>
+
+
+
+
+<!-- contenedor-->    
+</body>
+</html>
+
+
+<script>
+
+ $(document).ready(function(){
+  $("#animo").click(function(){
+    $("#panel_1").animate({
+      left: '-800px',
+     
+    });
+  });
+});
+
+$(document).ready(function(){
+  $("#animo2").click(function(){
+    $("#panel_1").animate({
+      left: '-500px',
+     
+    });
+  });
+});
+
+
+</script>
+<script>
+    var i= 0;
+    var menu = document.getElementById('menu');
+    var logotipo = document.getElementById('logo');
+    var menu_movil_flag = 0;
+    console.log(menu_movil_flag);
+    
+
+
+
+
+
+
+/*  terminan funciones de validacion  demo del numero */
+
+
+function planes1() {
+    document.getElementById("panel_1").style.left='500px';
+    console.log('muevo panel');
+    
+}
+
+function planes2() {
+    document.getElementById("panel_2").style.display = "none";
+    document.getElementById("panel_1").style.display = "block";
+}
+
+
+
+
+
+</script>
