@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Paquetes</title>
+    <meta name="description" content="Más que un servicio de Telefonía Móvil, es la Comunidad más grande de Venozolanos en México">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+   
+
+    <script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+    <link rel="icon" href="icono_chamo.png">
+
+
+</head>
+<body>
+
+  <div class="flex justify-between bg-white  shadow-lg border-t border-gray-800" > 
+    <div class="px-5 mt-5">Logo</div>
+    <div class="px-5 mt-2">
+        <div class=" bg-black text-gray-100  text-xl rounded-full h-12 w-12  m-2 flex items-center justify-center float-right">DP</div></div>
+  </div>
+
+<div class="flex flex-wrap w-full mb-5">
+  <div class=" w-full md:w-1/5 bg-gray-100 mb-5">
+      <nav>
+        <div class="flex justify-between  text-gray-800 uppercase text-xl py-2 px-2  font-bold">
+            <p> <i class="fas fa-cubes ml-5 mr-2"></i>
+        Paquetes</p>
+        </div> 
+        <section   id="pq_1">
+             <div class="flex  justify-between bg-gray-800 text-white uppercase text-sm py-2 px-2  font-bold cursor-pointer hover:bg-gray-600" onclick="show_panel('pq_s1')">
+            <p> <i class="fas fa-cubes ml-5 mr-2"></i>Paquete1</p>
+                <div> 
+                     <p id="icon_plus_pq_s1" ><i class="fas fa-plus ml-5"></i></p>
+                     <p id="icon_minus_pq_s1" class="hidden" ><i class="fas fa-minus"></i></p> 
+                </div>
+           
+        </div> 
+        <div class="bg-gray-100 flex hidden" id="pq_s1">
+            <ul class="ml-5 px-2 py-2 ">
+                <li class="text-sm"> <a href="#">Suplemento1 </a></li>
+                <li class="text-sm"> <a href="#">Suplemento2 </a></li>
+            </ul>
+        </div> 
+    </section>
+    <section id="pq_2">
+        <div class="flex  justify-between bg-gray-800 text-white uppercase text-sm py-2 px-2  font-bold cursor-pointer hover:bg-gray-600" onclick="show_panel('pq_s2')">
+            <p> <i class="fas fa-cubes ml-5 mr-2" ></i>Paquete2</p>
+                <div> 
+                     <p id="icon_plus_pq_s2" ><i class="fas fa-plus ml-5"></i></p>
+                     <p id="icon_minus_pq_s2" class="hidden" ><i class="fas fa-minus"></i></p> 
+                </div>           
+        </div> 
+        <div class="bg-gray-100 flex hidden" id="pq_s2" >
+            <ul class="ml-5 px-2 py-2 ">
+                <li class="text-sm"> <a href="#">Suplemento1 </a></li>
+                <li class="text-sm"> <a href="#">Suplemento2 </a></li>
+            </ul>
+        </div> 
+    </section>
+        <section id="pq_2">
+        <div class="flex  justify-between bg-gray-800 text-white uppercase text-sm py-2 px-2  font-bold cursor-pointer hover:bg-gray-600">
+            <p> <i class="fas fa-cubes ml-5 mr-2 "></i>Paquete</p>
+                   
+        </div> 
+      
+    </section>
+
+
+      </nav>
+
+
+  </div>
+  <div class=" w-full md:w-4/5 bg-white border-l-2  border-gray-100 px-5">     
+    <section id="sept1" class="hidden">
+     <!--- <form>-->
+         <div class="flex shadow-lg shadow bg-gray-400 border">             
+              <div class=" w-full">
+                  <div class="tracking-widest text-2xl w-full bg-gray-800 text-white px-2 mb-4"> Paquete 1</div>
+                 
+                      <div class="mb-4 mx-10">
+                          <label for="base_paquete" class="block mb-2 text-sm text-gray-800">Nombre</label>
+                          <input type="text" name="nombre" class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" >
+                          
+                      </div>
+                      <div class="mb-4 mx-10">
+                          <label for="password" class="block mb-2 text-sm text-gray-800">Precio</label>
+                          <input type="text" name="precio"  class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" >                   
+                      </div>   
+                <div class="tracking-widest text-xl mx-10">Configuracion de Módulo</div>               
+                    <div class="mb-4 mx-10">
+                        <label for="base_paquete" class="block mb-2 text-sm">Capacidad de datos</label>
+                        <select class="w-full py-2 px-3">                       
+                          <option value="5">5</option>
+                          <option value="10">10</option>
+                          <option value="25">25</option>
+                          <option value="50">50</option>
+                          <option value="75">75</option>
+                          <option value="100">100</option>
+                          <option value="200">200</option>
+                        </select>    
+                        <p class="mt-2">Movilidad: 100Mb, 500 Mb,  1Gb, 5Gb</p>  
+
+                        <div class="mt-10 py-2">
+                            <hr>
+                            <p class="font-bold text_xl">Suplemento 1</p>
+                            <div class="mb-4 mx-10">
+                                    <label for="base_paquete" class="block mb-2 text-sm text-gray-800">Nombre</label>
+                                    <input type="text" name="nombre" class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" >
+                                    
+                                </div>
+                                <div class="mb-4 mx-10">
+                                    <label for="password" class="block mb-2 text-sm text-gray-800">Precio</label>
+                                    <input type="text" name="precio"  class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" > 
+                                    <button class="w-1/3 text-white bg-gray-800 uppercase font-bold uppercase rounded text-white shadow-inner mt-16 py-2 px-3 hover:bg-gray-600 hover:text-white">Guardar</button>                
+                  
+                                </div> 
+                        </div>
+                        <div class="mt-10 py-2">
+                                <hr>
+                                <p class="font-bold text_xl">Suplemento 2</p>
+                                <div class="mb-4 mx-10">
+                                        <label for="base_paquete" class="block mb-2 text-sm text-gray-800">Nombre</label>
+                                        <input type="text" name="nombre" class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" >
+                                        
+                                    </div>
+                                    <div class="mb-4 mx-10">
+                                        <label for="password" class="block mb-2 text-sm text-gray-800">Precio</label>
+                                        <input type="text" name="precio"  class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" > 
+                                        <button class="w-1/3 text-white bg-gray-800 uppercase font-bold uppercase rounded text-white shadow-inner mt-16 py-2 px-3 hover:bg-gray-600 hover:text-white">Guardar</button>                
+                      
+                                    </div> 
+                            </div>
+
+
+
+
+
+
+                         <button class="w-full text-white bg-gray-800 uppercase font-bold uppercase rounded text-white shadow-inner mt-16 py-2 px-3 hover:bg-gray-600 hover:text-white" onclick="btn_siguiente()">Siguiente</button>                
+                    </div>
+                   
+            </div> 
+    </div>
+  </form>
+</section>  
+<section id="sept2" class="hidden">
+         <div class=" w-full">
+                  <div class="tracking-widest text-2xl w-full bg-gray-800 text-white px-2 mb-4"> Paquete 1</div>
+                    <div class="block lg:flex  shadow-lg  shadow bg-gray-200">             
+                        <div class=" w-2/3 px-6 py-5 ml-10">
+                            <div class="mb-4">Opcional, el paquete tiene suplementos ¿quieres configurarlos para usarlos?</div>         
+                                <div>
+                                    <label for="base_paquete" class="block mb-2 text-sm text-gray-800">Nombre</label>
+                                    <input type="text" name="nombre" class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none">                    
+                                </div>
+                               <button class="w-full text-white bg-gray-800 uppercase font-bold uppercase rounded text-white shadow-inner mt-16 py-2 px-3 hover:bg-gray-600 hover:text-white">Guardar</button>
+                      </div>                
+                    </div>
+            </div> 
+    </div>
+  </form>               
+</section>
+  </div>
+</div>
+
+
+<!-- contenedor-->    
+</body>
+</html>
+<script type="text/javascript">
+   
+   var flag = 1; 
+ 
+
+function show_panel(param) {
+
+        var icon_plus = 'icon_plus_'+ param;
+        var icon_minus = 'icon_minus_'+ param;
+
+        if (flag == 1 ) {
+        document.getElementById('sept1').style.display = 'block';
+        document.getElementById(param).style.display = "block";
+        document.getElementById(icon_plus).style.display = "none";
+        document.getElementById(icon_minus).style.display = "block";
+       
+        flag = 0;
+        console.log(icon_plus);  
+        } else if (flag == 0) {
+        document.getElementById(param).style.display = "none"; 
+        document.getElementById(icon_plus).style.display = "block";
+        document.getElementById(icon_minus).style.display = "none";
+        flag = 1;
+        console.log(flag);  
+        }
+    };  
+
+function hide_subPaquetes() {
+    
+     document.getElementById('pq_s1').style.display = "none";
+     document.getElementById('pq_s2').style.display = "none";
+
+}
+    
+function btn_siguiente() {
+    document.getElementById('sept1').style.display = 'none';
+    document.getElementById('sept2').style.display = 'block';
+}
+
+</script>
