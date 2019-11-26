@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=Forma, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Forma simple</title>
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+   
+
+    <script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+</head>
+<body>
+    
+    <div class="container flex bg-gray-200">
+            <h1 class="mt-5 font-bold mx-10">Pasando datos</h1>
+
+            <form class="w-full">
+                        <div class="flex w-1/2">
+                                
+                                <label for="dato" class="flex w-full">Introduce un dato</label>
+                                <input type="text" name="dato" id="dato"  class="focus:border-blue-500 appearance-none border rounded w-full py-2 px-3 text-gray-700 leading-tight focus:outline-none" > 
+                        </div>
+                        <div class="w-full">
+                                <button class="w-1/3 text-white bg-gray-800 uppercase font-bold uppercase rounded text-white shadow-inner mt-16 py-2 px-3 hover:bg-gray-600 hover:text-white" onclick="reciboDato()">Guardar</button>   
+                        </div>
+                    
+
+
+
+
+
+
+            </form>
+
+
+    </div>
+</body>
+</html>
+<script>
+
+function reciboDato(){
+    let myDadto = document.getElementById('dato').value;
+    if (myDadto < 5){
+        document.write('el valor es muy pequeño');
+    } else if(myDadto > 5) {
+        document.write('Su valor ha sido acceptado');
+        let contador = 2
+while(contador <= 20) {
+    document.write('Hay tantas' + contador +  'fresas'+ '<br>')
+    contador++;
+}
+    }
+}
+
+
+</script>
