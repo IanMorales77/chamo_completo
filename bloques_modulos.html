@@ -1,0 +1,85 @@
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta http-equiv="X-UA-Compatible" content="ie=edge">
+<title>Chamo Movil</title>
+<meta name="description" content="Más que un servicio de Telefonía Móvil, es la Comunidad más grande de Venozolanos en México">
+<link rel="stylesheet" href="css/app.css">
+<link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+<script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+
+
+<div class="flex mb-4 mx-10">
+        <div class="w-1/2  mx-2">
+          <div class="rounded bg-blue-800 text-white  text-lg font-bold px-2 h-8" >Activaciones & Excedentes
+              <div class="float-right" onclick="show_card('panel1', '_p1')">
+                  <table>
+                      <tr id="arrow_down_p1">
+                          <td><i class="far fa-caret-square-down text-white  mt-2 cursor-pointer hover:text-blue-200"  ></i></td>
+                      </tr>
+                      <tr class="hidden"   id="arrow_up_p1">
+                          <td> <i class="far fa-caret-square-up text-white  mt-2 cursor-pointer hover:text-blue-200" "></i></td>
+                      </tr>
+                  </table>                  
+              </div>
+             </div>
+          <div class="rounded  text-blue-600 h-48  shadow-lg" id="panel1">
+             
+              <p class="text-center text-gray-800 mt-2 mb-5">Visualiza el reporte de activaciones y compras de excedentes. </p> <br>
+              <div class="w-40 mx-auto">
+                  <button class="px-2 py-2  rounded-lg border border-blue-800 mt-2  bg-white text-blue-800 text-base  hover:bg-blue-800 hover:text-white">Continuar</button>        
+              </div>
+          </div>
+        </div>
+        <div class="w-1/2 mx-2">
+          <div class="rounded bg-blue-800 text-white  text-lg font-bold px-2 h-8" >Activaciones & Excedentes
+                  <div class="float-right" onclick="show_card('panel2', '_p2')">
+                      <table>
+                          <tr id="arrow_down_p2">
+                              <td><i class="far fa-caret-square-down text-white  mt-2 cursor-pointer hover:text-blue-200"  ></i></td>
+                          </tr>
+                          <tr class="hidden"   id="arrow_up_p2">
+                              <td> <i class="far fa-caret-square-up text-white  mt-2 cursor-pointer hover:text-blue-200" "></i></td>
+                          </tr>
+                      </table>                  
+                  </div>
+                 </div>
+              <div class="rounded  text-blue-600 h-48  shadow-lg" id="panel2">                      
+                  <p class="text-center text-gray-800 mt-2 mb-5">Visualiza el reporte de activaciones y compras de excedentes. </p> <br>
+                  <div class="w-40 mx-auto">
+                      <button class="px-2 py-2  rounded-lg border border-blue-800 mt-2  bg-white text-blue-800 text-base  hover:bg-blue-800 hover:text-white">Continuar</button>        
+                   </div>
+              </div>
+          </div>
+  </div>
+
+
+  <script>
+
+        function show_card(param, param2) {
+          var x = document.getElementById(param);
+          var prefix =  param2;
+        
+          var a = document.getElementById('arrow_down'+ prefix);
+          var c = document.getElementById('arrow_up'+ prefix);
+          if (x.style.display === "none") {
+            x.style.display = "block";
+            a.style.display = "block";
+            c.style.display = "none";
+          
+        
+        
+        
+          } else {
+            x.style.display = "none";
+            a.style.display = "none";
+            c.style.display = "block";
+          }
+        }
+        </script>
+
+
+
+
+
+
+

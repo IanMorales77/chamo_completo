@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chamo Movil</title>
+    <meta name="description" content="Más que un servicio de Telefonía Móvil, es la Comunidad más grande de Venozolanos en México">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+    <link rel="icon" href="icono_chamo.png">
+
+<style>
+     .thumnail_catalog{
+         width: 175px;
+
+    }
+
+    #favorito,#favorito2, #detalle, #prodcutos_listado{
+        display: none;
+    }
+
+</style>
+   
+</strong>
+</head>
+<body>          
+
+        <div class="flex bg-local  banner_medio mx-5" id='inicio' >
+                <div class="w-1/5 " id="left_column_0">&nbsp;</div>
+               <nav class="  m-auto w-4/5  bg-white border-b-2  mb-5 mt-5">           
+                <div class="flex mb-4 mx-2">
+                    <div class="text-gray-700  font-bold text-2xl">Resumen</div>
+                   
+                    </div>    
+                </nav>
+                   
+        </div>
+                
+     </div>  
+   
+<section id="catalogo">
+     <div class="flex flex-wrap mx-5 md:mx-10">
+             
+                <div class="w-1/5 " id="left_column">
+                    <div class="md:block mx-2 bg-blue-500 rounded-lg px-2  h-screen ">
+                            <div class="m-auto w-40 mb-2">
+                                <button class="px-2 py-2  rounded-lg border border-gray-100 mt-2 uppercase text-white hover:bg-blue-800 ">Busqueda Rápida</button>        
+                            </div>
+                            <div class="m-auto w-40 mb-2">
+                                <ul class="flex text-white text-sm">
+                                    <li class=" mx-2 hover:text-blue-800"><a href="#">Email</a></li>
+                                    <li>|</li>
+                                    <li class=" mx-2 hover:text-blue-800"><a href="#">Nombre</a></li>
+                                    <li>|</li>
+                                    <li class=" mx-2 hover:text-blue-800"><a href="#">IMEI</a></li>
+                                </ul>                            
+                            </div>
+                            <div class="m-auto mb-5">
+                              
+                                    <input class=" ml-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline py-2  rounded-lg px-2" type="text" placeholder="Buscar por">
+                               
+                            </div>
+                            <div>
+                                <ul class="text-white">
+                                    <li class="border-b mb-5 px-4 py-2 hover:text-blue-800"><a href="#"><i class="fas fa-directions text-xl"></i> Adm. de Clientes</a></li>
+                                    <li class="border-b mb-5 px-4 py-2 hover:text-blue-800"><a href="#"><i class="fas fa-directions text-xl"></i> Reportes</a></li>
+                                    <li class="border-b mb-5 px-4 py-2 hover:text-blue-800"><a href="#"><i class="fas fa-directions text-xl"></i> Call Center</a></li>
+                                    <li class="border-b mb-5 px-4 py-2 hover:text-blue-800"><a href="#"><i class="fas fa-directions text-xl"></i> Ventas</a></li>
+                                    <li class="border-b mb-5 px-4 py-2 hover:text-blue-800"><a href="#"><i class="fas fa-home text-xl"></i> Inicio</a></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            
+                         
+                        
+    
+                    </div>
+
+ </div>
+                
+                <!--columna dos-->
+    <div class=" w-full md:w-4/5  " id="column_2">
+
+        <nav class="  m-auto  mx-10 px-2 bg-white border rounded-lg  shadow-lg  mb-5 mt-5">
+                <table width=100%; class= "px-2 text-lg text-gray-700">
+                    <tr class="h-12">
+                        <td><span class="font-bold">Nombre:</span> Pedro Silva</td>
+                        <td><span class="font-bold">Tipo:</span> Prepago</td>
+                        <td><span class="font-bold">ID:</span> 10000233345454545</td>
+                        <td><span class="font-bold">Teléfono:</span> 55401702000 (mobile) </td>
+                        <td><span class="font-bold">Saldo:</span> 100) </td>
+                    </tr>
+                </table>        
+                   
+            </nav> 
+      
+      <div class="flex mb-4 mx-10">
+              <div class="w-1/2  mx-2">
+                <div class="rounded bg-blue-800 text-white  text-lg font-bold px-2 h-8" >Activaciones & Excedentes
+                    <div class="float-right" onclick="show_card('panel1', '_p1')">
+                        <table>
+                            <tr id="arrow_down_p1">
+                                <td><i class="far fa-caret-square-down text-white  mt-2 cursor-pointer hover:text-blue-200"  ></i></td>
+                            </tr>
+                            <tr class="hidden"   id="arrow_up_p1">
+                                <td> <i class="far fa-caret-square-up text-white  mt-2 cursor-pointer hover:text-blue-200" "></i></td>
+                            </tr>
+                        </table>                  
+                    </div>
+                   </div>
+                <div class="rounded  text-blue-600 h-48  shadow-lg" id="panel1">
+                   
+                    <p class="text-center text-gray-800 mt-2 mb-5">Nombre:
+                            Plan Pana 4GB + Redes Sociales
+                            
+                            Precio:
+                            $350
+                            
+                            Descripción:
+                            </p> <br>
+                    <div class="w-40 mx-auto">
+                        <button class="px-2 py-2  rounded-lg border border-blue-800 mt-2  bg-white text-blue-800 text-base  hover:bg-blue-800 hover:text-white">Continuar</button>        
+                    </div>
+                </div>
+              </div>
+              <div class="w-1/2 mx-2">
+                <div class="rounded bg-blue-800 text-white  text-lg font-bold px-2 h-8" >Recargas
+                        <div class="float-right" onclick="show_card('panel2', '_p2')">
+                            <table>
+                                <tr id="arrow_down_p2">
+                                    <td><i class="far fa-caret-square-down text-white  mt-2 cursor-pointer hover:text-blue-200"  ></i></td>
+                                </tr>
+                                <tr class="hidden"   id="arrow_up_p2">
+                                    <td> <i class="far fa-caret-square-up text-white  mt-2 cursor-pointer hover:text-blue-200" "></i></td>
+                                </tr>
+                            </table>                  
+                        </div>
+                       </div>
+                    <div class="rounded  text-blue-600 h-48  shadow-lg" id="panel2">                      
+                        <p class="text-center text-gray-800 mt-2 mb-5">Visualizar el reporte de las transacciones realizadas mediante las diferentes integraciones. </p> <br>
+                        <div class="w-40 mx-auto">
+                            <button class="px-2 py-2  rounded-lg border border-blue-800 mt-2  bg-white text-blue-800 text-base  hover:bg-blue-800 hover:text-white">Continuar</button>        
+                         </div>
+                    </div>
+                </div>
+        </div>     
+<section>
+        <div class="flex mb-4 mx-10">
+                <div class="w-1/2  mx-2">
+                  <div class="rounded bg-blue-800 text-white  text-lg font-bold px-2 h-8" >Activaciones & Excedentes
+                      <div class="float-right" onclick="show_card('panel3', '_p3')">
+                          <table>
+                              <tr id="arrow_down_p3">
+                                  <td><i class="far fa-caret-square-down text-white  mt-2 cursor-pointer hover:text-blue-200"  ></i></td>
+                              </tr>
+                              <tr class="hidden"   id="arrow_up_p3">
+                                  <td> <i class="far fa-caret-square-up text-white  mt-2 cursor-pointer hover:text-blue-200" "></i></td>
+                              </tr>
+                          </table>                  
+                      </div>
+                     </div>
+                  <div class="rounded  text-blue-600 h-48  shadow-lg" id="panel3">
+                     
+                      <p class="text-center text-gray-800 mt-2 mb-5">Visualiza el reporte de activaciones y compras de excedentes. </p> <br>
+                      <div class="w-40 mx-auto">
+                          <button class="px-2 py-2  rounded-lg border border-blue-800 mt-2  bg-white text-blue-800 text-base  hover:bg-blue-800 hover:text-white">Continuar</button>        
+                      </div>
+                  </div>
+                </div>
+                <div class="w-1/2  flex mx-2">
+                    <div class="w-1/2 mx-2">
+                        <div class="rounded bg-blue-800 text-white  text-sm font-bold px-2 h-8" >Pasarela de pago
+                                <div class="float-right" onclick="show_card('panel4', '_p4')">
+                                    <table>
+                                        <tr id="arrow_down_p4">
+                                            <td><i class="far fa-caret-square-down text-white  mt-2 cursor-pointer hover:text-blue-200"  ></i></td>
+                                        </tr>
+                                        <tr class="hidden"   id="arrow_up_p4">
+                                            <td> <i class="far fa-caret-square-up text-white  mt-2 cursor-pointer hover:text-blue-200" "></i></td>
+                                        </tr>
+                                    </table>                  
+                                </div>
+                               </div>
+                            <div class="rounded  text-blue-600 h-48  shadow-lg" id="panel4">
+                               
+                                <p class="text-center text-gray-800 mt-2 mb-5">Visualiza el reporte de activaciones y compras de excedentes. </p> <br>
+                                <div class="w-40 mx-auto">
+                                    <button class="px-2 py-2  rounded-lg border border-blue-800 mt-2  bg-white text-blue-800 text-base  hover:bg-blue-800 hover:text-white">Continuar</button>        
+                                </div>
+                            </div>
+                    </div>
+                  
+                    <div class="w-1/2 mx-2">
+                        <div class="rounded bg-blue-800 text-white  text-sm font-bold px-2 h-8" >Detalles de la promoción
+                                <div class="float-right" onclick="show_card('panel5', '_p5')">
+                                    <table>
+                                        <tr id="arrow_down_p5">
+                                            <td><i class="far fa-caret-square-down text-white  mt-2 cursor-pointer hover:text-blue-200"  ></i></td>
+                                        </tr>
+                                        <tr class="hidden"   id="arrow_up_p5">
+                                            <td> <i class="far fa-caret-square-up text-white  mt-2 cursor-pointer hover:text-blue-200" "></i></td>
+                                        </tr>
+                                    </table>                  
+                                </div>
+                               </div>
+                            <div class="rounded  text-blue-600 h-48  shadow-lg" id="panel5">
+                               
+                                <p class="text-center text-gray-800 mt-2 mb-5">Visualiza el reporte de activaciones y compras de excedentes. </p> <br>
+                                <div class="w-40 mx-auto">
+                                    <button class="px-2 py-2  rounded-lg border border-blue-800 mt-2  bg-white text-blue-800 text-base  hover:bg-blue-800 hover:text-white">Continuar</button>        
+                                </div>
+                            </div>
+
+            </div>
+                  
+                  
+                  
+                    
+          </div> 
+          
+          
+  <section>
+
+
+            
+        </section>
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+
+
+<script>
+
+function show_card(param, param2) {
+  var x = document.getElementById(param);
+  var prefix =  param2;
+
+  var a = document.getElementById('arrow_down'+ prefix);
+  var c = document.getElementById('arrow_up'+ prefix);
+  if (x.style.display === "none") {
+    x.style.display = "block";
+    a.style.display = "block";
+    c.style.display = "none";
+  
+
+
+
+  } else {
+    x.style.display = "none";
+    a.style.display = "none";
+    c.style.display = "block";
+  }
+}
+</script>
+
+
