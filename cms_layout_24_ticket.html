@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Chamo Movil</title>
+    <meta name="description" content="Más que un servicio de Telefonía Móvil, es la Comunidad más grande de Venozolanos en México">
+    <link rel="stylesheet" href="css/app.css">
+    <link href="https://fonts.googleapis.com/css?family=Poppins&display=swap" rel="stylesheet">
+   
+
+    <script src="https://kit.fontawesome.com/e99553c5a2.js"></script>
+
+    <link rel="icon" href="icono_chamo.png">
+
+<style>
+     .thumnail_catalog{
+         width: 175px;
+
+    }
+
+    #favorito,#favorito2, #detalle, #prodcutos_listado{
+        display: none;
+    }
+
+</style>
+   
+</strong>
+</head>
+<body>          
+
+  
+   
+<section id="catalogo">
+     <div class="flex flex-wrap mx-5 ">
+             
+                <div class="w-1/5 " id="left_column">
+                    <div class="md:block mx-2 bg-blue-500 rounded-lg px-2  h-screen ">
+                            <div class="m-auto w-40 mb-2">
+                                <button class="px-2 py-2  rounded-lg border border-gray-100 mt-2 uppercase text-white hover:bg-blue-800 ">Busqueda Rápida</button>        
+                            </div>
+                            <div class="m-auto w-40 mb-2">
+                                <ul class="flex text-white text-sm">
+                                    <li class=" mx-2 hover:text-blue-800"><a href="#">Email</a></li>
+                                    <li>|</li>
+                                    <li class=" mx-2 hover:text-blue-800"><a href="#">Nombre</a></li>
+                                    <li>|</li>
+                                    <li class=" mx-2 hover:text-blue-800"><a href="#">IMEI</a></li>
+                                </ul>                            
+                            </div>
+                            <div class="m-auto mb-5">                             
+                                    <input class=" ml-5 text-gray-700 leading-tight focus:outline-none focus:shadow-outline py-2  rounded-lg px-2" type="text" placeholder="Buscar por">                               
+                            </div>
+                            <div>
+                                <ul class="text-white">
+                                    <li class="border-b mb-5 px-4 py-2 hover:text-blue-800"><a href="#"><i class="fas fa-directions text-xl"></i> Adm. de Clientes</a></li>
+                                    <li class="border-b mb-5 px-4 py-2 hover:text-blue-800"><a href="#"><i class="fas fa-directions text-xl"></i> Reportes</a></li>
+                                    <li class="border-b mb-5 px-4 py-2 hover:text-blue-800"><a href="#"><i class="fas fa-directions text-xl"></i> Call Center</a></li>
+                                    <li class="border-b mb-5 px-4 py-2 hover:text-blue-800"><a href="#"><i class="fas fa-directions text-xl"></i> Ventas</a></li>
+                                    <li class="border-b mb-5 px-4 py-2 hover:text-blue-800"><a href="#"><i class="fas fa-home text-xl"></i> Inicio</a></li>
+                                    <li></li>
+                                </ul>
+                            </div>
+                            
+                         
+                        
+    
+                    </div>
+
+ </div>
+                
+                <!--columna dos-->
+    <div class=" w-full md:w-4/5 " id="column_2">
+
+        <div class="flex mb-4 mx-2 justify-between">
+            <div class="text-gray-700  font-bold text-2xl">&nbsp;</div> 
+            <div class="text-center border boder-blue-800 rounded-lg px-2 py-2 mt-5 cursor-pointer" onclick="document.getElementById('notas').style.display = 'block'"> <i class="fas fa-plus-circle text-3xl  text-blue-800"></i> <br> <p  class="text-sm">Nuevo</p></div>
+                         
+    </div>
+
+      
+      
+    
+<section id="ticket">
+
+    <div class="flex  justify-start    mb-2 p2">
+        <table class= "text-sm text-gray-700 border border-gray-500 w-full table-auto">
+            <tr class="bg-blue-800 text-white font-bold text-sm h-12  border border-gray-500">
+                <td class="px-2 ">Num</td>
+                <td class="px-2 text-xs  text-center">STATUS </td>
+                <td class="px-2 text-xs  text-center">FECHA </td>
+                <td class="px-2 text-xs  text-center">MOTIVO</td>
+                <td class="px-2 text-xs text-center" >RESUMEN</td> 
+                <td class="px-2  text-xs text-center">ORIGINADO POR </td>
+                <td class="px-2 text-xs text-center">ATENDIDO POR </td>           
+            </tr>
+            <tr>
+                <td class=" border px-2 py-2  text-center ">01</td>
+                <td class="border px-2  text-center ">Cerrado </td>
+                <td class="border px-2  text-center">12-11-2019 </td>                
+                <td class="border px-2  text-center">Recarga fallida </td> 
+                <td class="border px-2  text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. <i class="fas fa-sign-in-alt text-lg cursor-pointer"></i></td>                      
+                <td class="border px-2  text-center"> <span class="bg-blue-200 px-2 rounded">Ian Rodrigo</span> </td>
+                <td class="border px-2  text-center"><span class="bg-green-300 px-2 rounded">Roberto Morales</span> </td>            
+            </tr>
+
+            <tr>
+                <td class=" border px-2 py-2  text-center ">01</td>
+                <td class="border px-2  text-center ">Cerrado </td>
+                <td class="border px-2  text-center">12-11-2019 </td>                
+                <td class="border px-2  text-center">Recarga fallida </td> 
+                <td class="border px-2  text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. <i class="fas fa-sign-in-alt text-lg cursor-pointer"></i></td>                      
+                <td class="border px-2  text-center"> <span class="bg-blue-200 px-2 rounded">Ian Rodrigo</span> </td>
+                <td class="border px-2  text-center"><span class="bg-green-300 px-2 rounded">Roberto Morales</span> </td>            
+            </tr>
+
+            <tr>
+                <td class=" border px-2 py-2  text-center ">01</td>
+                <td class="border px-2  text-center ">Cerrado </td>
+                <td class="border px-2  text-center">12-11-2019 </td>                
+                <td class="border px-2  text-center">Recarga fallida </td> 
+                <td class="border px-2  text-center">Lorem ipsum dolor sit amet consectetur adipisicing elit. <i class="fas fa-sign-in-alt text-lg cursor-pointer"></i></td>                      
+                <td class="border px-2  text-center"> <span class="bg-blue-200 px-2 rounded">Ian Rodrigo</span> </td>
+                <td class="border px-2  text-center"><span class="bg-green-300 px-2 rounded">Roberto Morales</span> </td>            
+            </tr>
+         
+           
+        </table>
+    </div>
+</section>
+
+<section>   
+
+    <nav class="  m-auto  mx-10  bg-white border rounded-lg  shadow-lg  mb-5 mt-5">
+        <div class="w-full bg-red-300 text-center uppercase text-white bg-blue-800 rounded-tl-lg rounded-tr-lg py-2">Información del usuario</div>
+        <table  class="px-2 text-lg text-gray-700 px-2 border border-gray-500 table-auto w-full">          
+                <tr class="h-12">
+                <td class="border text-sm text-center">MVNO:CHAMO MÓVIL</td>
+                <td class="border text-sm text-center">IMSI:</span> 6787763663</td>
+                <td class="border text-sm text-center">MSISDN: 10000233345454545</td>
+                <td class="border text-sm text-center">STATUS:</span> 55401702000 (mobile) </td>
+                <td class="border text-sm text-center">FECHA DE ACTIVACION: 07-11-2019 </td>
+            </tr>
+
+            <tr class="h-12">
+                <td class="border text-sm text-center">USUARIO:CARLOS ARTEAGA</td>
+                <td class="border text-sm text-center">IMEI:</span> 6787763663</td>
+                <td class="border text-sm text-center">ICCID: 10000233345454545</td>
+                <td class="border text-sm text-center">PLAN:</span> 55401702000 (mobile) </td>
+                <td class="border text-sm text-center">FECHA DE CORTE: 07-11-2019 </td>
+            </tr>
+           
+       </table>        
+           
+    </nav>
+</section>
+
+<SECTION></SECTION>
+<div class="flex mb-4 mx-5">
+    <div class="w-4/5">
+        <p class=" text-gray-700  font-bold text-2xl border-b-2"> <i class="fas fa-plus-circle text-5xl text-blue-800"></i> 
+            <span class="text-gray-500 text-3xl">
+            Nuevo Ticekt | A0001</p> </span>   
+        </div>
+       
+    </div>
+    <div class="flex mb-4">
+        <div class="w-1/3 px-2 mr-2">
+            <label for="nombre" class="px-2">SEVERIDAD</label> <br>
+            <select class="form-control form-control-sm bg-gray-300  w-full py-2 px-3 mr-2 ml-2 ">
+                <option value="">SELECCIONAR USUARIO:</option>
+            </select>    
+        </div>
+        <div class="w-1/3  px-2 mr-2">
+            <label for="nombre" class="px-2">STATUS</label> <br>
+            <select class="form-control form-control-sm bg-gray-300  w-full py-2 px-3 mr-2 ml-2 ">
+                <option value="">SELECCIONAR STATUS:</option>
+            </select> 
+        </div>
+        <div class="w-1/3  px-2 mr-2">
+            <label for="nombre" class="px-2">RELACIONAR</label> <br>
+            <select class="form-control form-control-sm bg-gray-300  w-full py-2 px-3 mr-2 ml-2 ">
+                <option value="">SELECCIONAR RELACION:</option>
+            </select> 
+        </div>
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-1/3 px-2 mr-2">
+            <label for="nombre" class="px-2">PRODUCTO</label> <br>
+            <select class="form-control form-control-sm bg-gray-300  w-full py-2 px-3 mr-2 ml-2 ">
+                <option value="">SELECCIONAR USUARIO:</option>
+            </select>    
+        </div>
+        <div class="w-1/3  px-2 mr-2">
+            <label for="nombre" class="px-2">ASIGNAR TICKET</label> <br>
+            <select class="form-control form-control-sm bg-gray-300  w-full py-2 px-3 mr-2 ml-2 ">
+                <option value="">SELECCIONAR STATUS:</option>
+            </select> 
+        </div>
+        <div class="w-1/3  px-2 mr-2">
+            <label for="nombre" class="px-2">FECHA DE CREACION</label> <br>
+                <input type="date" class="bg-gray-300  w-full py-2 px-3 mr-2 ml-2">
+        </div>
+      </div>
+
+      <div class="flex mb-4">
+        <div class="w-1/3 px-2 mr-2 text-sm">
+            <label for="nombre" class="px-2">INCIDENCIA ADM</label> <br>
+            <input type="checkbox" name="vehicle1" value=""> Suspender línea<br>
+            <input type="checkbox" name="vehicle2" value=""> Actualizar datos del usuario<br>
+            <input type="checkbox" name="vehicle3" value="" checked>Cambio Plan o Paquete<br>
+            <input type="checkbox" name="vehicle3" value="" checked>Cambio de MISISDN<br>
+            <input type="checkbox" name="vehicle3" value="" checked>SIM SWAP (Cambio de SIM  mantenimiento el DN)
+        </div>
+        <div class="w-1/3  px-2 mr-2 text-sm">
+            <label for="nombre" class="px-2">INCENDENCIA TECNICA</label> <br>
+            <input type="checkbox" name="vehicle1" value=""> Inconvenientes de Servicio<br>
+            <input type="checkbox" name="vehicle2" value=""> Inconvenientes de Cobertura<br>
+            <input type="checkbox" name="vehicle3" value="" checked>Inconvenientes con activación de Plan<br>
+            <input type="checkbox" name="vehicle3" value="" checked>Inconvenientes con Recargas<br>
+           
+        </div>
+        <div class="w-1/3  px-2 mr-2">
+            <label for="nombre" class="px-2">FECHA DE CREACION</label> <br>
+                <input type="date" class="bg-gray-300  w-full py-2 px-3 mr-2 ml-2">
+        </div>
+      </div>
+      
+<section  id="notas">
+
+        <p class="text-gray-600 text-4xl">Para guardar el ticket se debe documentar la incidencia</p>
+
+        <div class="flex flex-wrap mx-auto mx-5 mx-10">
+                <div class="w-1/2 h-7 text-center text-white  border border-gray-400 rounded bg-blue-800">Descripción de la incidencia    </div>
+                <textarea rows="5" cols="33" class="bg-white appearance-none border-2 border-gray-400 rounded w-full py-2 px-4 text-blue-800 leading-tight focus:outline-none focus:bg-white focus:border-red-500 " placeholder="Describe yourself here..." id="entrada"></textarea>
+                <button class=" w-1/3 text-white bg-blue-800 uppercase font-bold uppercase rounded text-white shadow-inner mt-5 py-2 hover:bg-blue-400 hover:text-white">Guardar</button>
+                <div class="flex w-full mt-5">                
+                </div>
+        </div>
+        
+        
+        <div class="flex flex-wrap mx-auto mx-5 mx-10">
+            <div class="w-1/2 h-7"><i class="fas fa-sticky-note text-5xl text-blue-800"></i>Nota</div>
+            <textarea rows="5" cols="33" class="bg-white appearance-none border-2 border-gray-400 rounded w-full py-2 px-4 text-blue-800 leading-tight focus:outline-none focus:bg-white focus:border-red-500 " placeholder="Describe yourself here..." id="entrada"></textarea>
+            <button class=" w-1/3 text-white bg-blue-800 uppercase font-bold uppercase rounded text-white shadow-inner mt-5 py-2 hover:bg-blue-400 hover:text-white">Guardar</button>
+            <div class="flex w-full mt-5">                
+            </div>
+    </div>
+
+
+</section>
+ 
+      
+
+
+
+    </div>
+
+
+
+
+
+</body>
+
+
+
+<script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+</script>
+
+
